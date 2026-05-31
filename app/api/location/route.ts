@@ -7,19 +7,49 @@ type LocationResponse = {
   sunset: string;
 };
 
-function todayAt(hour: number, minute: number, timezone: string) {
+function localMinutesInTimezone(timezone: string, date = new Date()) {
   const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: timezone,
+    hour: "numeric",
+    minute: "numeric",
+    hour12: false,
+  }).formatToParts(date);
+
+  const hour = Number(parts.find((p) => p.type === "hour")?.value ?? 0);
+  const minute = Number(parts.find((p) => p.type === "minute")?.value ?? 0);
+  return hour * 60 + minute;
+}
+
+/** Convert a local time in `timezone` on today's calendar date to a UTC ISO string. */
+function todayAt(hour: number, minute: number, timezone: string) {
+  const dateParts = new Intl.DateTimeFormat("en-US", {
     timeZone: timezone,
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
   }).formatToParts(new Date());
 
-  const year = parts.find((p) => p.type === "year")?.value ?? "2024";
-  const month = parts.find((p) => p.type === "month")?.value ?? "01";
-  const day = parts.find((p) => p.type === "day")?.value ?? "01";
+  const year = dateParts.find((p) => p.type === "year")?.value ?? "2024";
+  const month = dateParts.find((p) => p.type === "month")?.value ?? "01";
+  const day = dateParts.find((p) => p.type === "day")?.value ?? "01";
 
-  return new Date(`${year}-${month}-${day}T${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}:00`);
+  const targetMinutes = hour * 60 + minute;
+  let guess = Date.UTC(
+    Number(year),
+    Number(month) - 1,
+    Number(day),
+    hour,
+    minute
+  );
+
+  for (let i = 0; i < 48; i++) {
+    const currentMinutes = localMinutesInTimezone(timezone, new Date(guess));
+    const diff = targetMinutes - currentMinutes;
+    if (diff === 0) break;
+    guess += diff * 60_000;
+  }
+
+  return new Date(guess).toISOString();
 }
 
 export async function GET() {
@@ -63,8 +93,8 @@ export async function GET() {
     const payload: LocationResponse = {
       country,
       timezone,
-      sunrise: todayAt(6, 30, timezone).toISOString(),
-      sunset: todayAt(19, 30, timezone).toISOString(),
+      sunrise: todayAt(6, 30, timezone),
+      sunset: todayAt(19, 30, timezone),
     };
 
     return Response.json(payload);
