@@ -1,0 +1,4737 @@
+{
+  "aste360": {
+    "caseStudy": {
+      "id": 10,
+      "slug": "aste360",
+      "slugLock": true,
+      "name": "Aste360",
+      "link": null,
+      "linkLabel": null,
+      "previewImage": {
+        "id": 292,
+        "alt": "aste360-project-preview.png",
+        "updatedAt": "2026-03-05T08:34:39.968Z",
+        "createdAt": "2026-03-05T08:34:39.968Z",
+        "url": "/api/media/file/aste360-project-preview.png",
+        "thumbnailURL": null,
+        "filename": "aste360-project-preview.png",
+        "mimeType": "image/png",
+        "filesize": 496689,
+        "width": 1200,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Smart real estate auction monitoring",
+      "projectTypeLabel": "DATA STRATEGY",
+      "stageLabel": "CORE ENGINE",
+      "deliverablesLabel": "CORE TECH",
+      "projectType": [
+        "AI Scraping",
+        "Market Analysis Tools",
+        "Database Management",
+        "Data Visualization"
+      ],
+      "stage": "Smart real estate auction monitoring",
+      "deliverables": [
+        "Auction Aggregation",
+        "Monitoring Platform"
+      ],
+      "status": "",
+      "numberOfUsers": "",
+      "industryName": "Real Estate & Artificial Intelligence",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Created with the mission to provide a leading platform for reliability and efficiency in the Italian judicial real estate sector. Powered by a comprehensive database, the project aims to intercept a potential market of over 723,000 clients, including lawyers, real estate agencies, and small private investors.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 224,
+        "alt": "aste360-cover.png",
+        "updatedAt": "2026-03-04T16:04:51.197Z",
+        "createdAt": "2026-01-28T18:48:07.458Z",
+        "url": "/api/media/file/aste360-cover-1.png",
+        "thumbnailURL": null,
+        "filename": "aste360-cover-1.png",
+        "mimeType": "image/png",
+        "filesize": 991052,
+        "width": 1920,
+        "height": 960,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "ASTE360",
+      "functionalities": [
+        {
+          "id": "697b98b90ff49800011083ee",
+          "title": "AI Data Scraping & Aggregation",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We employ advanced data mining technologies to scan and aggregate all auctions nationwide in real-time.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 100,
+              "alt": "aste360-1",
+              "updatedAt": "2026-03-06T08:11:28.701Z",
+              "createdAt": "2026-01-20T18:21:55.084Z",
+              "url": "/api/media/file/aste360-1.webp",
+              "thumbnailURL": null,
+              "filename": "aste360-1.webp",
+              "mimeType": "image/webp",
+              "filesize": 325220,
+              "width": 2240,
+              "height": 1680,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 293,
+              "alt": "aste360-2",
+              "updatedAt": "2026-03-06T08:11:45.292Z",
+              "createdAt": "2026-03-05T08:35:29.212Z",
+              "url": "/api/media/file/aste360-2.webp",
+              "thumbnailURL": null,
+              "filename": "aste360-2.webp",
+              "mimeType": "image/webp",
+              "filesize": 82302,
+              "width": 3200,
+              "height": 1840,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 230,
+              "alt": "aste360-3",
+              "updatedAt": "2026-03-06T08:12:03.107Z",
+              "createdAt": "2026-01-28T19:01:05.839Z",
+              "url": "/api/media/file/aste360-3.webp",
+              "thumbnailURL": null,
+              "filename": "aste360-3.webp",
+              "mimeType": "image/webp",
+              "filesize": 420668,
+              "width": 2240,
+              "height": 1680,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98b90ff49800011083ef",
+          "title": "Market Analysis & OMI Evaluation Tools",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The platform integrates advanced market analysis tools, including OMI (Osservatorio del Mercato Immobiliare) evaluations and price comparisons.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Unlike competitors that offer simple listings, ASTE360 provides in-depth analytics that allow users to instantly assess the profitability of every lot.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 225,
+              "alt": "aste360-4",
+              "updatedAt": "2026-03-06T08:12:30.747Z",
+              "createdAt": "2026-01-28T18:51:43.636Z",
+              "url": "/api/media/file/aste360-4.webp",
+              "thumbnailURL": null,
+              "filename": "aste360-4.webp",
+              "mimeType": "image/webp",
+              "filesize": 214998,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 227,
+              "alt": "aste360-5",
+              "updatedAt": "2026-03-06T08:12:47.803Z",
+              "createdAt": "2026-01-28T18:54:19.818Z",
+              "url": "/api/media/file/aste360-5.webp",
+              "thumbnailURL": null,
+              "filename": "aste360-5.webp",
+              "mimeType": "image/webp",
+              "filesize": 454432,
+              "width": 1680,
+              "height": 2240,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98b90ff49800011083f0",
+          "title": "Scalable Professional Solutions",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We structured flexible pricing plans to suit different user types, from private individuals to large notary firms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The solution is scaled to serve a Serviceable Addressable Market (SAM) with a potential value of €84 million, offering intuitive interfaces for both occasional users and institutional investors.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 226,
+              "alt": "aste360-6",
+              "updatedAt": "2026-03-06T08:13:05.769Z",
+              "createdAt": "2026-01-28T18:52:03.542Z",
+              "url": "/api/media/file/aste360-6.webp",
+              "thumbnailURL": null,
+              "filename": "aste360-6.webp",
+              "mimeType": "image/webp",
+              "filesize": 288394,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 229,
+              "alt": "aste360-7.png",
+              "updatedAt": "2026-03-04T16:10:23.748Z",
+              "createdAt": "2026-01-28T18:57:41.713Z",
+              "url": "/api/media/file/aste360-7.png",
+              "thumbnailURL": null,
+              "filename": "aste360-7.png",
+              "mimeType": "image/png",
+              "filesize": 775058,
+              "width": 1280,
+              "height": 960,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " Thanks to ASTE360, we have reduced the time spent on manual procedure research by 70%. The precision of the integrated OMI data allows us to present our clients with granular, professional investment analyses that previously took days of work. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "MARCO VALERI",
+        "jobDescription": "Partner at Studio Legale Immobiliare Associati"
+      },
+      "metaTitle": "Aste360 | Smart real estate auction monitoring | LOUD",
+      "metaDescription": "created with the mission to provide a leading platform for reliability and efficiency in the Italian judicial real estate sector. Powered by a comprehensive database, the project aims to intercept a potential market of over 723,000 clients, including lawyers, real estate agencies, and small private investors.",
+      "updatedAt": "2026-03-12T09:31:32.148Z",
+      "createdAt": "2026-01-29T17:28:25.540Z"
+    },
+    "allProjects": null
+  },
+  "balloon": {
+    "caseStudy": {
+      "id": 5,
+      "slug": "balloon",
+      "slugLock": true,
+      "name": "Balloon",
+      "link": "https://balloon.travel",
+      "linkLabel": "Download it",
+      "previewImage": {
+        "id": 160,
+        "alt": "preview-project-balloon.jpg",
+        "updatedAt": "2026-01-22T14:07:20.751Z",
+        "createdAt": "2026-01-22T14:07:20.751Z",
+        "url": "/api/media/file/preview-project-balloon.jpg",
+        "thumbnailURL": null,
+        "filename": "preview-project-balloon.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 182633,
+        "width": 2156,
+        "height": 2156,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "iOS & Android",
+      "projectTypeLabel": "FOCUS AREAS",
+      "stageLabel": "PRODUCT CATEGORY",
+      "deliverablesLabel": "EXPERTISE",
+      "projectType": [
+        "Marketing",
+        "Mobile App",
+        "Intelligence"
+      ],
+      "stage": "Travel App",
+      "deliverables": [
+        "Product Design",
+        "Engineering",
+        "Mobile App"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "+30k Download",
+      "industryName": "Mobile Apps",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Born in 2020, at a time when travelling was largely impossible due to COVID and people could only dream about new destinations. Instead of planning the next trip, travellers wanted a way to reconnect with the journeys they had already made.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 192,
+        "alt": "home-preview-balloon.jpg",
+        "updatedAt": "2026-01-23T16:57:24.504Z",
+        "createdAt": "2026-01-23T16:57:24.504Z",
+        "url": "/api/media/file/home-preview-balloon-1.jpg",
+        "thumbnailURL": null,
+        "filename": "home-preview-balloon-1.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 304779,
+        "width": 6000,
+        "height": 3000,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "Balloon",
+      "functionalities": [
+        {
+          "id": "696f8e67174d990001523e17",
+          "title": "Personalized",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "From the very first screen, Balloon adapts to you. We ask what matters most in your trips – luxury, family travel, accessibility needs, or other priorities – and use those choices to guide your entire experience. This way every country insight, suggestion and detail feels more relevant to how you actually travel, not to some generic tourist.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 193,
+              "alt": "preview-balloon-1.jpg",
+              "updatedAt": "2026-01-23T17:01:52.212Z",
+              "createdAt": "2026-01-23T17:01:52.212Z",
+              "url": "/api/media/file/preview-balloon-1.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-1.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 281488,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 194,
+              "alt": "preview-balloon-2.jpg",
+              "updatedAt": "2026-01-23T17:29:37.041Z",
+              "createdAt": "2026-01-23T17:29:37.041Z",
+              "url": "/api/media/file/preview-balloon-2.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-2.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 481884,
+              "width": 6000,
+              "height": 3000,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 195,
+              "alt": "preview-balloon-3.jpg",
+              "updatedAt": "2026-01-23T17:29:37.449Z",
+              "createdAt": "2026-01-23T17:29:37.449Z",
+              "url": "/api/media/file/preview-balloon-3.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-3.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 166975,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "696f8e67174d990001523e18",
+          "title": "Country Insights",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "For every country – whether it’s one you’ve already visited or one Balloon suggests – you get a structured, professional profile instead of just a pin on the map.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The travel industry is no stranger to disruption. And in the post-pandemic world, travel companies must continuously reinvent to outwit unforeseen circumstances, while providing cohesive, elevated experiences for customers.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 196,
+              "alt": "preview-balloon-4.jpg",
+              "updatedAt": "2026-01-23T17:29:37.850Z",
+              "createdAt": "2026-01-23T17:29:37.850Z",
+              "url": "/api/media/file/preview-balloon-4.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-4.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 203686,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 198,
+              "alt": "preview-balloon-6.jpg",
+              "updatedAt": "2026-01-23T17:29:39.327Z",
+              "createdAt": "2026-01-23T17:29:39.327Z",
+              "url": "/api/media/file/preview-balloon-6.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-6.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 378763,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "696f8e67174d990001523e19",
+          "title": "Innovation on Mobile Platforms",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "At LOUD, we systematically adopt new operating system releases wherever they create real value for users",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Features such as widgets, dark mode, “liquid glass” effects and other native capabilities are evaluated and implemented across our apps when they enhance clarity, usability and engagement.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 197,
+              "alt": "preview-balloon-5.jpg",
+              "updatedAt": "2026-01-23T17:29:38.312Z",
+              "createdAt": "2026-01-23T17:29:38.312Z",
+              "url": "/api/media/file/preview-balloon-5.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-5.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 179885,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 199,
+              "alt": "preview-balloon-7.jpg",
+              "updatedAt": "2026-01-23T17:36:25.587Z",
+              "createdAt": "2026-01-23T17:36:25.587Z",
+              "url": "/api/media/file/preview-balloon-7.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-balloon-7.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 216418,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " It’s a great app and they have the best customer service of all time. I had a tiny problem and they did everything they can to solve it and now I can use this great app thanks to Balloon Team. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "OZGUNOCAKLI",
+        "jobDescription": "Balloon Travel - AppStore"
+      },
+      "metaTitle": "Balloon | Travel App | LOUD",
+      "metaDescription": "Born in 2020, at a time when travelling was largely impossible due to COVID and people could only dream about new destinations. Instead of planning the next trip, travellers wanted a way to reconnect with the journeys they had already made.",
+      "updatedAt": "2026-03-12T09:31:49.831Z",
+      "createdAt": "2026-01-20T14:17:11.219Z"
+    },
+    "allProjects": null
+  },
+  "bike-room": {
+    "caseStudy": {
+      "id": 8,
+      "slug": "bike-room",
+      "slugLock": true,
+      "name": "Bike-Room",
+      "link": "https://bike-room.com",
+      "linkLabel": "Website",
+      "previewImage": {
+        "id": 302,
+        "alt": "bikeroom-project-preview",
+        "updatedAt": "2026-03-05T16:50:24.782Z",
+        "createdAt": "2026-03-05T16:50:24.782Z",
+        "url": "/api/media/file/bikeroom-project-preview.webp",
+        "thumbnailURL": null,
+        "filename": "bikeroom-project-preview.webp",
+        "mimeType": "image/webp",
+        "filesize": 108064,
+        "width": 1200,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "From Zero to Exit: Scaling E-commerce",
+      "projectTypeLabel": "TECH STRATEGY",
+      "stageLabel": "BUSINESS MILESTONE",
+      "deliverablesLabel": "VENTURE SERVICES",
+      "projectType": [
+        "Shopify API Middleware",
+        "Co-founding",
+        "Tech Strategy",
+        "Custom BI Software",
+        "Multi-Warehouse Sync"
+      ],
+      "stage": "From Zero to Exit: Scaling E-commerce",
+      "deliverables": [
+        "Venture Building",
+        "Shopify Custom App",
+        "API Middleware",
+        "Business Intelligence Tool"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "+100 Monthly Orders",
+      "industryName": "E-Commerce",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Bike-room is a success story of technical co-founding. We engineered the entire tech stack from day zero, scaling it to millions in turnover and a successful exit. We transformed a standard Shopify setup into a high-performance marketplace hub, integrating external partners and automating the entire supply chain via custom APIs.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 294,
+        "alt": "bikeroom-cover",
+        "updatedAt": "2026-03-05T15:21:53.628Z",
+        "createdAt": "2026-03-05T14:54:27.949Z",
+        "url": "/api/media/file/bikeroom-cover.webp",
+        "thumbnailURL": null,
+        "filename": "bikeroom-cover.webp",
+        "mimeType": "image/webp",
+        "filesize": 330572,
+        "width": 2160,
+        "height": 1080,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "LOUD x BIKE-ROOM",
+      "functionalities": [
+        {
+          "id": "697b98a80ff49800011083e8",
+          "title": "API-Driven Marketplace Infrastructure",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We developed a custom external platform that serves as the \"brain\" of the operation, connected to Shopify via webhooks and high-speed APIs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 305,
+              "alt": "bikeroom-1",
+              "updatedAt": "2026-03-05T17:07:56.987Z",
+              "createdAt": "2026-03-05T17:07:56.987Z",
+              "url": "/api/media/file/bikeroom-1.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-1.webp",
+              "mimeType": "image/webp",
+              "filesize": 379646,
+              "width": 2560,
+              "height": 1920,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 304,
+              "alt": "bikeroom-2",
+              "updatedAt": "2026-03-05T17:07:55.803Z",
+              "createdAt": "2026-03-05T17:07:55.803Z",
+              "url": "/api/media/file/bikeroom-2.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-2.webp",
+              "mimeType": "image/webp",
+              "filesize": 158780,
+              "width": 3200,
+              "height": 1840,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 303,
+              "alt": "bikeroom-3",
+              "updatedAt": "2026-03-05T17:07:54.911Z",
+              "createdAt": "2026-03-05T17:07:54.911Z",
+              "url": "/api/media/file/bikeroom-3.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-3.webp",
+              "mimeType": "image/webp",
+              "filesize": 409522,
+              "width": 2560,
+              "height": 1920,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98a80ff49800011083e9",
+          "title": "Automated Multi-Partner Synchronization",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Managing prices and stock levels across diverse partners requires surgical precision and zero manual entry.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We built an automated synchronization engine that updates quantities and dynamic pricing every night via API. This ensures that the global stock from various warehouses is always accurate, preventing overselling and pricing errors in a volatile market.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 307,
+              "alt": "bikeroom-4",
+              "updatedAt": "2026-03-05T17:08:20.388Z",
+              "createdAt": "2026-03-05T17:08:20.388Z",
+              "url": "/api/media/file/bikeroom-4.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-4.webp",
+              "mimeType": "image/webp",
+              "filesize": 451426,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 306,
+              "alt": "bikeroom-5",
+              "updatedAt": "2026-03-05T17:08:18.027Z",
+              "createdAt": "2026-03-05T17:08:18.027Z",
+              "url": "/api/media/file/bikeroom-5.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-5.webp",
+              "mimeType": "image/webp",
+              "filesize": 254674,
+              "width": 1680,
+              "height": 2240,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98a80ff49800011083ea",
+          "title": "BI & Technical Data Asset Management",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Beyond the sale, we built a comprehensive technical database of bicycle specifications and a custom Business Intelligence suite.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "By aggregating data from the marketplace and external ERPs, we provided the leadership team with real-time insights into profitability and inventory forecasting, turning raw data into the company’s most valuable asset for the exit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 309,
+              "alt": "bikeroom-6",
+              "updatedAt": "2026-03-05T17:08:40.789Z",
+              "createdAt": "2026-03-05T17:08:40.789Z",
+              "url": "/api/media/file/bikeroom-6.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-6.webp",
+              "mimeType": "image/webp",
+              "filesize": 363798,
+              "width": 1200,
+              "height": 1600,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 308,
+              "alt": "bikeroom-7",
+              "updatedAt": "2026-03-05T17:08:39.716Z",
+              "createdAt": "2026-03-05T17:08:39.716Z",
+              "url": "/api/media/file/bikeroom-7.webp",
+              "thumbnailURL": null,
+              "filename": "bikeroom-7.webp",
+              "mimeType": "image/webp",
+              "filesize": 169718,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " They engineered our entire business backbone. We moved from a standard e-commerce to a custom operational ecosystem that now manages over €8 million in sales effortlessly. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "MATTEO M.",
+        "jobDescription": "CEO - Bike-Room"
+      },
+      "metaTitle": "Bike-room | From Zero to Exit: Scaling E-commerce | LOUD",
+      "metaDescription": "Bike-room is a success story of technical co-founding. We engineered the entire tech stack from day zero, scaling it to millions in turnover and a successful exit.",
+      "updatedAt": "2026-03-12T09:32:06.195Z",
+      "createdAt": "2026-01-29T17:28:08.337Z"
+    },
+    "allProjects": null
+  },
+  "catasto-20": {
+    "caseStudy": {
+      "id": 3,
+      "slug": "catasto-20",
+      "slugLock": true,
+      "name": "Catasto 2.0",
+      "link": null,
+      "linkLabel": null,
+      "previewImage": {
+        "id": 161,
+        "alt": "catasto-preview.jpg",
+        "updatedAt": "2026-01-22T14:13:53.965Z",
+        "createdAt": "2026-01-22T14:13:53.965Z",
+        "url": "/api/media/file/catasto-preview.jpg",
+        "thumbnailURL": null,
+        "filename": "catasto-preview.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 920035,
+        "width": 2156,
+        "height": 2156,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Real-Time Data Warehouse",
+      "projectTypeLabel": "DATA ASSETS",
+      "stageLabel": "DATA INFRA",
+      "deliverablesLabel": "ENGINEERING",
+      "projectType": [
+        "Data Warehouse",
+        "Analytics Dashboard"
+      ],
+      "stage": "Real-Time Data Warehouse",
+      "deliverables": [
+        "Data Architecture",
+        "AI Development",
+        "API Engineering"
+      ],
+      "status": "",
+      "numberOfUsers": "80+ Milions Data Points",
+      "industryName": "Real Estate",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A new, modern data layer for the entire Real Estate industry, centralizing millions of records, enriching them with real-time updates and unlocking API access to information previously obtainable only through manual requests",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 211,
+        "alt": "preview-catasto-home.jpg",
+        "updatedAt": "2026-01-28T17:56:15.342Z",
+        "createdAt": "2026-01-28T17:56:15.342Z",
+        "url": "/api/media/file/preview-catasto-home-1.jpg",
+        "thumbnailURL": null,
+        "filename": "preview-catasto-home-1.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 847348,
+        "width": 2400,
+        "height": 1800,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "CATASTO 2.0",
+      "functionalities": [
+        {
+          "id": "68adc4747cea5e0001bb5b0b",
+          "title": "Unified Data Layer",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Public and proprietary records are merged into a single, coherent database—providing complete visibility over every property in Italy.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 209,
+              "alt": "preview-catasto-3.jpg",
+              "updatedAt": "2026-01-28T17:52:30.636Z",
+              "createdAt": "2026-01-28T17:52:30.636Z",
+              "url": "/api/media/file/preview-catasto-3.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-catasto-3.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 721861,
+              "width": 1920,
+              "height": 2961,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 208,
+              "alt": "preview-catasto-2.jpg",
+              "updatedAt": "2026-01-28T17:50:07.239Z",
+              "createdAt": "2026-01-28T17:50:07.239Z",
+              "url": "/api/media/file/jaron-nix-Cc2iy_f8RQ8-unsplash%20(1)%20(3).jpg",
+              "thumbnailURL": null,
+              "filename": "jaron-nix-Cc2iy_f8RQ8-unsplash (1) (3).jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 1040839,
+              "width": 4210,
+              "height": 2631,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 207,
+              "alt": "cover-catasto.jpg",
+              "updatedAt": "2026-01-28T17:45:01.257Z",
+              "createdAt": "2026-01-28T17:45:01.257Z",
+              "url": "/api/media/file/kaspars-upmanis-Z0AcAo2luII-unsplash%20(2)%20(2).jpg",
+              "thumbnailURL": null,
+              "filename": "kaspars-upmanis-Z0AcAo2luII-unsplash (2) (2).jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 1002577,
+              "width": 1920,
+              "height": 2880,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "68adc4747cea5e0001bb5b0c",
+          "title": "Real-Time Ownership Updates",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The system tracks every change in ownership or cadastral status, notifying clients as soon as new information becomes available.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "This real-time visibility allows companies to anticipate market movements, identify opportunities early and operate with fully up-to-date data.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 215,
+              "alt": "preview-catasto-8.jpg",
+              "updatedAt": "2026-01-28T18:02:05.087Z",
+              "createdAt": "2026-01-28T18:02:05.087Z",
+              "url": "/api/media/file/preview-catasto-8.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-catasto-8.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 920706,
+              "width": 1920,
+              "height": 2880,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 92,
+              "alt": "catasto-hover.jpg",
+              "updatedAt": "2026-01-20T17:56:57.263Z",
+              "createdAt": "2026-01-20T17:56:57.263Z",
+              "url": "/api/media/file/catasto-hover.jpg",
+              "thumbnailURL": null,
+              "filename": "catasto-hover.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 780337,
+              "width": 2000,
+              "height": 2000,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "68adc4747cea5e0001bb5b0d",
+          "title": "Automated Document Engine",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Visure, floor plans and official acts are retrieved through a fully automated workflow, eliminating manual requests and human bottlenecks.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "By streamlining document acquisition, the platform reduces delivery times from hours to seconds, ensuring faster due-diligence and smoother integrations.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 213,
+              "alt": "preview-catasto-6.jpg",
+              "updatedAt": "2026-01-28T17:58:48.376Z",
+              "createdAt": "2026-01-28T17:58:48.376Z",
+              "url": "/api/media/file/preview-catasto-6.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-catasto-6.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 223932,
+              "width": 1920,
+              "height": 1080,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 214,
+              "alt": "preview-catasto-7.jpg",
+              "updatedAt": "2026-01-28T18:00:25.976Z",
+              "createdAt": "2026-01-28T18:00:25.976Z",
+              "url": "/api/media/file/preview-catasto-7.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-catasto-7.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 885966,
+              "width": 3264,
+              "height": 2448,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " The Italian cadastral system has been stuck in the past for decades. We’re rewriting the rules — turning a slow, fragmented bureaucracy into a modern, intelligent data infrastructure. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "ANGELA CHIOFALO",
+        "jobDescription": "Real Estate Expert"
+      },
+      "metaTitle": "CATASTO 2.0 | Real-Time Data  Warehouse | LOUD",
+      "metaDescription": "A new, modern data layer for the entire Real Estate industry, centralizing millions of records, enriching them with real-time updates and unlocking API access to information previously obtainable only through manual requests.",
+      "updatedAt": "2026-03-12T09:32:19.737Z",
+      "createdAt": "2025-08-26T14:28:04.622Z"
+    },
+    "allProjects": null
+  },
+  "cercacasa": {
+    "caseStudy": {
+      "id": 2,
+      "slug": "cercacasa",
+      "slugLock": true,
+      "name": "Cercacasa",
+      "link": "https://cercacasa.it",
+      "linkLabel": "Website",
+      "previewImage": {
+        "id": 102,
+        "alt": "ai-cercacasa-home-1.jpg",
+        "updatedAt": "2026-01-20T18:31:31.619Z",
+        "createdAt": "2026-01-20T18:31:31.619Z",
+        "url": "/api/media/file/ai-cercacasa-home-1.jpg",
+        "thumbnailURL": null,
+        "filename": "ai-cercacasa-home-1.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 190329,
+        "width": 2000,
+        "height": 2000,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Real Estate Search Engine",
+      "projectTypeLabel": "CHANNELS",
+      "stageLabel": "ENGINE TYPE",
+      "deliverablesLabel": "CORE SERVICES",
+      "projectType": [
+        "Website",
+        "Mobile App",
+        "Dashboard"
+      ],
+      "stage": "Real Estate Search Engine",
+      "deliverables": [
+        "Product Design",
+        "Engineering",
+        "Architecture"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "200.000k+ Monthly Users",
+      "industryName": "Real Estate",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Cercacasa introduces a new generation of marketplace functionality. From verified agent onboarding to MLS collaboration, geolocated search and automated listing validation, every feature is crafted to improve trust and reduce friction.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 222,
+        "alt": "home-cercacasa.jpg",
+        "updatedAt": "2026-01-28T18:22:53.630Z",
+        "createdAt": "2026-01-28T18:22:53.630Z",
+        "url": "/api/media/file/home-cercacasa.jpg",
+        "thumbnailURL": null,
+        "filename": "home-cercacasa.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 931410,
+        "width": 3639,
+        "height": 2585,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "LOUD x CERCACASA",
+      "functionalities": [
+        {
+          "id": "68adc4577cea5e0001bb5b08",
+          "title": "Verified Professionals",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Certified agent and agency validation ensures the platform hosts only trusted, authorized operators—bringing transparency and reliability to every listing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 218,
+              "alt": "preview-cercacasa-app-2.jpg",
+              "updatedAt": "2026-01-28T18:21:15.883Z",
+              "createdAt": "2026-01-28T18:21:15.883Z",
+              "url": "/api/media/file/preview-cercacasa-app-2.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-cercacasa-app-2.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 315971,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 102,
+              "alt": "ai-cercacasa-home-1.jpg",
+              "updatedAt": "2026-01-20T18:31:31.619Z",
+              "createdAt": "2026-01-20T18:31:31.619Z",
+              "url": "/api/media/file/ai-cercacasa-home-1.jpg",
+              "thumbnailURL": null,
+              "filename": "ai-cercacasa-home-1.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 190329,
+              "width": 2000,
+              "height": 2000,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 217,
+              "alt": "preview-cercacasa-app-1.jpg",
+              "updatedAt": "2026-01-28T18:21:15.553Z",
+              "createdAt": "2026-01-28T18:21:15.553Z",
+              "url": "/api/media/file/preview-cercacasa-app-1.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-cercacasa-app-1.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 122169,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "68adc4577cea5e0001bb5b09",
+          "title": "MLS Collaboration",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The MLS system enables agencies to share and manage listings within a unified environment, eliminating duplicates and improving the overall quality of available properties.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "By centralizing collaboration, the platform increases transparency and accelerates transactions, giving agencies a scalable way to expand their portfolio and reach more clients.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 219,
+              "alt": "preview-cercacasa-app-3.jpg",
+              "updatedAt": "2026-01-28T18:21:15.976Z",
+              "createdAt": "2026-01-28T18:21:15.976Z",
+              "url": "/api/media/file/preview-cercacasa-app-3.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-cercacasa-app-3.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 154176,
+              "width": 1970,
+              "height": 2030,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 221,
+              "alt": "preview-cercacasa-web-3.jpg",
+              "updatedAt": "2026-01-28T18:21:16.375Z",
+              "createdAt": "2026-01-28T18:21:16.375Z",
+              "url": "/api/media/file/preview-cercacasa-web-3.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-cercacasa-web-3.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 271967,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "68adc4577cea5e0001bb5b0a",
+          "title": "Intelligent Lead Routing",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Cercacasa automatically directs each request to the most relevant local professional, ensuring users receive faster, more accurate support.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "This smart distribution system enhances conversion rates and helps agencies focus on high-value opportunities by matching leads to expertise, location and availability.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 220,
+              "alt": "preview-cercacasa-web-2.jpg",
+              "updatedAt": "2026-01-28T18:21:16.253Z",
+              "createdAt": "2026-01-28T18:21:16.253Z",
+              "url": "/api/media/file/preview-cercacasa-web-2.jpg",
+              "thumbnailURL": null,
+              "filename": "preview-cercacasa-web-2.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 412657,
+              "width": 2678,
+              "height": 3140,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 223,
+              "alt": "cercacasa-context.jpg",
+              "updatedAt": "2026-01-28T18:23:42.069Z",
+              "createdAt": "2026-01-28T18:23:42.069Z",
+              "url": "/api/media/file/cercacasa-context.jpg",
+              "thumbnailURL": null,
+              "filename": "cercacasa-context.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 547789,
+              "width": 1920,
+              "height": 1440,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " Thanks to LOUD we redefined online property search in Italy: a modern, transparent platform fully connected to the national Real Estate data ecosystem. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "PAOLO RIGHI",
+        "jobDescription": "Founder & CEO  -  The Business Partners"
+      },
+      "metaTitle": "Cercacasa.it | Real Estate Search Engine | LOUD",
+      "metaDescription": "Cercacasa introduces a new generation of marketplace functionality. From verified agent onboarding to MLS collaboration, geolocated search and automated listing validation, every feature is crafted to improve trust and reduce friction.",
+      "updatedAt": "2026-03-12T09:32:37.325Z",
+      "createdAt": "2025-08-26T14:27:35.298Z"
+    },
+    "allProjects": null
+  },
+  "ennevolte": {
+    "caseStudy": {
+      "id": 7,
+      "slug": "ennevolte",
+      "slugLock": true,
+      "name": "Ennevolte",
+      "link": "https://ennevolte.com",
+      "linkLabel": "Website",
+      "previewImage": {
+        "id": 310,
+        "alt": "ennevolte-project-preview",
+        "updatedAt": "2026-03-06T10:56:44.326Z",
+        "createdAt": "2026-03-06T10:56:44.326Z",
+        "url": "/api/media/file/ennevolte-project-preview.webp",
+        "thumbnailURL": null,
+        "filename": "ennevolte-project-preview.webp",
+        "mimeType": "image/webp",
+        "filesize": 173758,
+        "width": 1200,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Custom Middleware & Ticketing Platform",
+      "projectTypeLabel": "INTEGRATIONS",
+      "stageLabel": "ARCHITECTURE",
+      "deliverablesLabel": "TECH DELIVERABLES",
+      "projectType": [
+        "Marketing Website",
+        "Mobile App",
+        "Real-Time Dashboard"
+      ],
+      "stage": "-----",
+      "deliverables": [
+        "Shopify Integration",
+        "Custom Middleware",
+        "Vendor Portal"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "",
+      "industryName": "E-Commerce",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "We designed a custom tech ecosystem that bridges the Ennevolte Shopify store with external accounting software and CRM systems. By developing a dedicated external platform, we enabled automated invoicing and provided theaters with a secure, independent portal to manage ticket sales.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 311,
+        "alt": "ennevolte-cover",
+        "updatedAt": "2026-03-06T10:59:17.988Z",
+        "createdAt": "2026-03-06T10:59:17.988Z",
+        "url": "/api/media/file/ennevolte-cover.webp",
+        "thumbnailURL": null,
+        "filename": "ennevolte-cover.webp",
+        "mimeType": "image/webp",
+        "filesize": 419168,
+        "width": 1920,
+        "height": 960,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "LOUD x Ennevolte",
+      "functionalities": [
+        {
+          "id": "697b98920ff49800011083e5",
+          "title": "API Middleware & Webhook Architecture",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We built a secure, event-driven middleware that listens to Shopify webhooks in real-time to capture order and customer data.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 312,
+              "alt": "ennevolte-1",
+              "updatedAt": "2026-03-06T11:00:03.081Z",
+              "createdAt": "2026-03-06T11:00:03.081Z",
+              "url": "/api/media/file/ennevolte-1.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-1.webp",
+              "mimeType": "image/webp",
+              "filesize": 241644,
+              "width": 2560,
+              "height": 1920,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 313,
+              "alt": "ennevolte-2",
+              "updatedAt": "2026-03-06T11:00:04.777Z",
+              "createdAt": "2026-03-06T11:00:04.777Z",
+              "url": "/api/media/file/ennevolte-2.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-2.webp",
+              "mimeType": "image/webp",
+              "filesize": 184194,
+              "width": 3200,
+              "height": 1840,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 314,
+              "alt": "ennevolte-3",
+              "updatedAt": "2026-03-06T11:00:06.216Z",
+              "createdAt": "2026-03-06T11:00:06.216Z",
+              "url": "/api/media/file/ennevolte-3.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-3.webp",
+              "mimeType": "image/webp",
+              "filesize": 246180,
+              "width": 2240,
+              "height": 1680,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98920ff49800011083e6",
+          "title": "CRM & Automated Invoicing Integration",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "The custom platform automatically maps incoming Shopify order data directly to the company's existing CRM and billing software.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "This eliminates manual data entry and ensures that complex tax rules, invoicing requirements, and customer records are perfectly synchronized across all platforms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 315,
+              "alt": "ennevolte-4",
+              "updatedAt": "2026-03-06T11:00:26.208Z",
+              "createdAt": "2026-03-06T11:00:26.207Z",
+              "url": "/api/media/file/ennevolte-4.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-4.webp",
+              "mimeType": "image/webp",
+              "filesize": 73700,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 316,
+              "alt": "ennevolte-5",
+              "updatedAt": "2026-03-06T11:00:27.362Z",
+              "createdAt": "2026-03-06T11:00:27.362Z",
+              "url": "/api/media/file/ennevolte-5.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-5.webp",
+              "mimeType": "image/webp",
+              "filesize": 353426,
+              "width": 1680,
+              "height": 2240,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98920ff49800011083e7",
+          "title": "Dedicated Vendor Portals (Theater Management)",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We developed a secure, external dashboard specifically for theaters and event organizers to independently track ticket sales and validate access.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Vendors can log in to view real-time capacities and manage attendee lists, completely removing the need to grant them access to the main Shopify admin panel.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 317,
+              "alt": "ennevolte-6",
+              "updatedAt": "2026-03-06T11:00:49.089Z",
+              "createdAt": "2026-03-06T11:00:49.089Z",
+              "url": "/api/media/file/ennevolte-6.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-6.webp",
+              "mimeType": "image/webp",
+              "filesize": 184784,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 318,
+              "alt": "ennevolte-7",
+              "updatedAt": "2026-03-06T11:00:50.199Z",
+              "createdAt": "2026-03-06T11:00:50.199Z",
+              "url": "/api/media/file/ennevolte-7.webp",
+              "thumbnailURL": null,
+              "filename": "ennevolte-7.webp",
+              "mimeType": "image/webp",
+              "filesize": 159568,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " Before LOUD, managing theater ticketing and complex invoicing through standard Shopify apps was incredibly inefficient. Their custom middleware completely automated our workflow, perfectly syncing our CRM and giving our partners the independent access they needed. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "IVANO ARCA",
+        "jobDescription": "Digital Marketing Manager - Ennevolte"
+      },
+      "metaTitle": "Ennevolte | Custom Middleware & Ticketing Platform | LOUD",
+      "metaDescription": "We designed a custom tech ecosystem that bridges the Ennevolte Shopify store with external accounting software and CRM systems. By developing a dedicated external platform, we enabled automated invoicing and provided theaters with a secure, independent portal to manage ticket sales.",
+      "updatedAt": "2026-03-12T09:32:54.182Z",
+      "createdAt": "2026-01-29T17:27:46.290Z"
+    },
+    "allProjects": null
+  },
+  "shift2cal": {
+    "caseStudy": {
+      "id": 4,
+      "slug": "shift2cal",
+      "slugLock": true,
+      "name": "Shift2Cal",
+      "link": "https://shift2cal.com",
+      "linkLabel": "Download it",
+      "previewImage": {
+        "id": 328,
+        "alt": "shift2cal-project-preview",
+        "updatedAt": "2026-03-09T14:00:58.821Z",
+        "createdAt": "2026-03-09T14:00:58.821Z",
+        "url": "/api/media/file/shift2cal-project-preview.webp",
+        "thumbnailURL": null,
+        "filename": "shift2cal-project-preview.webp",
+        "mimeType": "image/webp",
+        "filesize": 53526,
+        "width": 1200,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Shift App Manager Intelligence Platform",
+      "projectTypeLabel": "CORE FEATURES",
+      "stageLabel": "MISSION",
+      "deliverablesLabel": "DELIVERABLES",
+      "projectType": [
+        "Marketing",
+        "Mobile App",
+        "Intelligence"
+      ],
+      "stage": "Shift App Manager Intelligence Platform",
+      "deliverables": [
+        "Product Design",
+        "Engineering",
+        "Mobile App"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "+50.000 Shift Converted",
+      "industryName": "Mobile Apps",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Many people today manage shifts with photos in WhatsApp, Telegram or other messaging apps, or with sheets pinned to a board and random screenshots. That’s exactly where this app comes in open that, frame the shift image, and it takes care of the rest.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 329,
+        "alt": "shift2cal-cover",
+        "updatedAt": "2026-03-09T14:01:26.727Z",
+        "createdAt": "2026-03-09T14:01:26.727Z",
+        "url": "/api/media/file/shift2cal-cover.webp",
+        "thumbnailURL": null,
+        "filename": "shift2cal-cover.webp",
+        "mimeType": "image/webp",
+        "filesize": 131652,
+        "width": 2400,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "Shift2Cal",
+      "functionalities": [
+        {
+          "id": "696f8cff174d990001523e14",
+          "title": "AI-Powered Calendar",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Designed to turn unstructured schedule files into clean, reliable calendar data. It combines OCR, table parsing and pattern recognition to interpret photos, PDFs and CSV exports, automatically detecting dates, times, shift labels and, when available, employee names.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 330,
+              "alt": "shift2cal-1",
+              "updatedAt": "2026-03-09T14:01:52.447Z",
+              "createdAt": "2026-03-09T14:01:52.447Z",
+              "url": "/api/media/file/shift2cal-1.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-1.webp",
+              "mimeType": "image/webp",
+              "filesize": 95216,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 331,
+              "alt": "shift2cal-2",
+              "updatedAt": "2026-03-09T14:01:53.182Z",
+              "createdAt": "2026-03-09T14:01:53.182Z",
+              "url": "/api/media/file/shift2cal-2.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-2.webp",
+              "mimeType": "image/webp",
+              "filesize": 92952,
+              "width": 3200,
+              "height": 1840,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 332,
+              "alt": "shift2cal-3",
+              "updatedAt": "2026-03-09T14:01:54.101Z",
+              "createdAt": "2026-03-09T14:01:54.101Z",
+              "url": "/api/media/file/shift2cal-3.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-3.webp",
+              "mimeType": "image/webp",
+              "filesize": 89942,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "696f8cff174d990001523e15",
+          "title": "Works with Apple, Google and Microsoft",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Built around a tight integration with the main calendar ecosystems, so imported shifts become first-class events rather than a parallel system. After connection to Apple Calendar, Google Calendar or Outlook via the native account on the device or secure sign-in.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Each shift is converted into a proper event with start/end time, title, notes and optional alerts, respecting the device time zone and the default notification settings of the chosen calendar.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 333,
+              "alt": "shift2cal-4",
+              "updatedAt": "2026-03-09T14:02:12.170Z",
+              "createdAt": "2026-03-09T14:02:12.170Z",
+              "url": "/api/media/file/shift2cal-4.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-4.webp",
+              "mimeType": "image/webp",
+              "filesize": 90540,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 334,
+              "alt": "shift2cal-5",
+              "updatedAt": "2026-03-09T14:02:13.310Z",
+              "createdAt": "2026-03-09T14:02:13.310Z",
+              "url": "/api/media/file/shift2cal-5.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-5.webp",
+              "mimeType": "image/webp",
+              "filesize": 189050,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "696f8cff174d990001523e16",
+          "title": "Sharing Model",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "When a rota includes multiple people, the app can derive a per-person schedule and let each user see who else is on shift for a given day or time slot",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Because shifts are saved as standard calendar events, users can also share their work calendar through existing Apple Calendar, Google Calendar or Outlook sharing features, or export a snapshot of upcoming shifts when they need to coordinate with a team lead or coworker outside the app.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 335,
+              "alt": "shift2cal-6",
+              "updatedAt": "2026-03-09T14:02:31.732Z",
+              "createdAt": "2026-03-09T14:02:31.732Z",
+              "url": "/api/media/file/shift2cal-6.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-6.webp",
+              "mimeType": "image/webp",
+              "filesize": 88346,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 336,
+              "alt": "shift2cal-7",
+              "updatedAt": "2026-03-09T14:02:32.689Z",
+              "createdAt": "2026-03-09T14:02:32.688Z",
+              "url": "/api/media/file/shift2cal-7.webp",
+              "thumbnailURL": null,
+              "filename": "shift2cal-7.webp",
+              "mimeType": "image/webp",
+              "filesize": 299500,
+              "width": 2560,
+              "height": 1920,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " Before this app I used to spend half an hour every month copying everything into my calendar, and I still made mistakes. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "ANDROID USER",
+        "jobDescription": "Shift2Cal - Google Play Store"
+      },
+      "metaTitle": "Shift2Cal | Shift App Manager Intelligence Platform | LOUD",
+      "metaDescription": "Many people today manage shifts with photos in WhatsApp, Telegram or other messaging apps, or with sheets pinned to a board and random screenshots. That’s exactly where this app comes in open that, frame the shift image, and it takes care of the rest.",
+      "updatedAt": "2026-03-12T09:33:09.309Z",
+      "createdAt": "2026-01-20T14:11:11.142Z"
+    },
+    "allProjects": null
+  },
+  "shiftpilot": {
+    "caseStudy": {
+      "id": 9,
+      "slug": "shiftpilot",
+      "slugLock": true,
+      "name": "ShiftPilot",
+      "link": "https://shiftcalendar.it",
+      "linkLabel": "Website",
+      "previewImage": {
+        "id": 337,
+        "alt": "shiftpilot-project-preview",
+        "updatedAt": "2026-03-09T17:23:34.276Z",
+        "createdAt": "2026-03-09T17:23:34.276Z",
+        "url": "/api/media/file/shiftpilot-project-preview.webp",
+        "thumbnailURL": null,
+        "filename": "shiftpilot-project-preview.webp",
+        "mimeType": "image/webp",
+        "filesize": 294172,
+        "width": 1200,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "AI Workforce Scheduling Platform",
+      "projectTypeLabel": "AI SCOPE",
+      "stageLabel": "PLATFORM TYPE",
+      "deliverablesLabel": "SERVICES",
+      "projectType": [
+        "Marketing Website",
+        "Mobile App",
+        "Real-Time Dashboard"
+      ],
+      "stage": "AI Workforce Scheduling Platform",
+      "deliverables": [
+        "Product Design",
+        "Marketing Site",
+        "Engineering"
+      ],
+      "status": "WIP",
+      "numberOfUsers": "",
+      "industryName": "Artificial Intelligence",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Powered by a hybrid AI system, it combines language models with deterministic optimization algorithms to generate the best shift plans in seconds. It drastically reduces the time spent on Excel, minimizes errors, and makes last-minute changes effortless. ShiftPilot takes into account contracts, employee preferences, skills, and coverage needs across every role and time slot.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 338,
+        "alt": "shiftpilot-cover",
+        "updatedAt": "2026-03-09T17:24:49.930Z",
+        "createdAt": "2026-03-09T17:24:49.930Z",
+        "url": "/api/media/file/shiftpilot-cover.webp",
+        "thumbnailURL": null,
+        "filename": "shiftpilot-cover.webp",
+        "mimeType": "image/webp",
+        "filesize": 444074,
+        "width": 1920,
+        "height": 960,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "ShiftPilot",
+      "functionalities": [
+        {
+          "id": "697b98b10ff49800011083eb",
+          "title": "Custom Rules for Team Performance",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Build schedules based on advanced rules tailored to your organization: who works best together, role requirements, rotations, and specific business constraints. ShiftPilot optimizes not only coverage, but also collaboration and balance within the team.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 339,
+              "alt": "shiftpilot-1",
+              "updatedAt": "2026-03-09T17:25:16.646Z",
+              "createdAt": "2026-03-09T17:25:16.646Z",
+              "url": "/api/media/file/shiftpilot-1.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-1.webp",
+              "mimeType": "image/webp",
+              "filesize": 189810,
+              "width": 1800,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 340,
+              "alt": "shiftpilot-2",
+              "updatedAt": "2026-03-12T13:27:49.231Z",
+              "createdAt": "2026-03-09T17:25:17.361Z",
+              "url": "/api/media/file/shiftpilot-8.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-8.webp",
+              "mimeType": "image/webp",
+              "filesize": 104744,
+              "width": 3200,
+              "height": 1840,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 341,
+              "alt": "shiftpilot-3",
+              "updatedAt": "2026-03-09T17:25:18.093Z",
+              "createdAt": "2026-03-09T17:25:18.093Z",
+              "url": "/api/media/file/shiftpilot-3.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-3.webp",
+              "mimeType": "image/webp",
+              "filesize": 145598,
+              "width": 1800,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98b10ff49800011083ec",
+          "title": "Natural Language Request Management",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Employees can submit vacation requests, shift swaps, or last-minute absences through simple chat messages or a bot — no complicated forms",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Managers receive everything in a structured workflow, approve in one click, and schedules update instantly with automatic notifications.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 342,
+              "alt": "shiftpilot-4",
+              "updatedAt": "2026-03-09T17:26:41.674Z",
+              "createdAt": "2026-03-09T17:26:41.674Z",
+              "url": "/api/media/file/shiftpilot-4.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-4.webp",
+              "mimeType": "image/webp",
+              "filesize": 69514,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 345,
+              "alt": "shiftpilot-5",
+              "updatedAt": "2026-03-09T17:50:03.721Z",
+              "createdAt": "2026-03-09T17:50:03.721Z",
+              "url": "/api/media/file/shiftpilot-5.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-5.webp",
+              "mimeType": "image/webp",
+              "filesize": 114870,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98b10ff49800011083ed",
+          "title": "Smart Scheduling Aligned with Labor Contracts",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Shift Pilot automatically respects contract limits, rest periods, overtime rules, and national labor compliance requirements.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Every schedule is generated to avoid violations, reduce extra costs, and ensure fair, sustainable workloads for everyone.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 343,
+              "alt": "shiftpilot-6",
+              "updatedAt": "2026-03-09T17:27:18.806Z",
+              "createdAt": "2026-03-09T17:27:18.806Z",
+              "url": "/api/media/file/shiftpilot-6.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-6.webp",
+              "mimeType": "image/webp",
+              "filesize": 234114,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 344,
+              "alt": "shiftpilot-7",
+              "updatedAt": "2026-03-09T17:27:19.661Z",
+              "createdAt": "2026-03-09T17:27:19.661Z",
+              "url": "/api/media/file/shiftpilot-7.webp",
+              "thumbnailURL": null,
+              "filename": "shiftpilot-7.webp",
+              "mimeType": "image/webp",
+              "filesize": 70076,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " ShiftPilot completely changed the way we manage shifts. What used to take hours now takes minutes — schedules are fairer, fully compliant, and our team feels much more supported. Handling absences and last-minute changes is finally stress-free. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "INTIMISSIMI ROMA",
+        "jobDescription": "Retail Operations Manager"
+      },
+      "metaTitle": "ShiftPilot | AI Workforce Scheduling Platform | LOUD",
+      "metaDescription": "An intelligent platform that transforms workforce scheduling for retail stores and complex operational teams",
+      "updatedAt": "2026-03-12T13:27:52.392Z",
+      "createdAt": "2026-01-29T17:28:17.904Z"
+    },
+    "allProjects": null
+  },
+  "shopify-tech": {
+    "caseStudy": {
+      "id": 11,
+      "slug": "shopify-tech",
+      "slugLock": true,
+      "name": "Shopify Tech",
+      "link": null,
+      "linkLabel": null,
+      "previewImage": {
+        "id": 319,
+        "alt": "shopify-tech-project-preview",
+        "updatedAt": "2026-03-06T17:25:45.377Z",
+        "createdAt": "2026-03-06T17:25:45.377Z",
+        "url": "/api/media/file/shopify-tech-project-preview.webp",
+        "thumbnailURL": null,
+        "filename": "shopify-tech-project-preview.webp",
+        "mimeType": "image/webp",
+        "filesize": 74128,
+        "width": 1200,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Shopify Custom Development",
+      "projectTypeLabel": "ECOSYSTEM",
+      "stageLabel": "CORE CHALLENGE",
+      "deliverablesLabel": "SOLUTIONS",
+      "projectType": [
+        "Shopify Custom App",
+        "Headless Commerce",
+        "Systems Integrations"
+      ],
+      "stage": "----",
+      "deliverables": [
+        "--"
+      ],
+      "status": "",
+      "numberOfUsers": "",
+      "industryName": "E-Commerce",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "We architect custom e-commerce ecosystems for scaling brands that have outgrown standard Shopify capabilities. By developing private apps, middleware, and headless solutions, we resolve complex operational bottlenecks while maintaining a fast, flexible infrastructure.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 320,
+        "alt": "shopify-tech-cover",
+        "updatedAt": "2026-03-06T17:27:06.729Z",
+        "createdAt": "2026-03-06T17:25:59.255Z",
+        "url": "/api/media/file/shopify-tech-cover-1.webp",
+        "thumbnailURL": null,
+        "filename": "shopify-tech-cover-1.webp",
+        "mimeType": "image/webp",
+        "filesize": 103266,
+        "width": 2400,
+        "height": 1200,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "LOUD x Shopify",
+      "functionalities": [
+        {
+          "id": "697b98c10ff49800011083f1",
+          "title": "Custom App Development & Backend Logic",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We engineer private Shopify applications to handle advanced business rules like dynamic pricing algorithms, custom bundling, and conditional shipping.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 321,
+              "alt": "shopify-tech-1",
+              "updatedAt": "2026-03-06T17:27:30.668Z",
+              "createdAt": "2026-03-06T17:27:30.668Z",
+              "url": "/api/media/file/shopify-tech-1.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-1.webp",
+              "mimeType": "image/webp",
+              "filesize": 159174,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 322,
+              "alt": "shopify-tech-2",
+              "updatedAt": "2026-03-06T17:27:31.913Z",
+              "createdAt": "2026-03-06T17:27:31.913Z",
+              "url": "/api/media/file/shopify-tech-2.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-2.webp",
+              "mimeType": "image/webp",
+              "filesize": 171246,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 323,
+              "alt": "shopify-tech-3",
+              "updatedAt": "2026-03-06T17:27:33.160Z",
+              "createdAt": "2026-03-06T17:27:33.160Z",
+              "url": "/api/media/file/shopify-tech-3.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-3.webp",
+              "mimeType": "image/webp",
+              "filesize": 156444,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98c10ff49800011083f2",
+          "title": "System Integration & Data Synchronization",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Enterprise operations require real-time, automated data communication between Shopify and internal software infrastructures.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We build custom middleware and API connectors to seamlessly sync data with your ERP, CRM, or PIM systems. This ensures data integrity and eliminates manual entry for multi-warehouse inventories and complex B2B/B2C order routing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 324,
+              "alt": "shopify-tech-4",
+              "updatedAt": "2026-03-06T17:27:51.912Z",
+              "createdAt": "2026-03-06T17:27:51.912Z",
+              "url": "/api/media/file/shopify-tech-4.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-4.webp",
+              "mimeType": "image/webp",
+              "filesize": 111142,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 325,
+              "alt": "shopify-tech-5",
+              "updatedAt": "2026-03-06T17:27:53.194Z",
+              "createdAt": "2026-03-06T17:27:53.194Z",
+              "url": "/api/media/file/shopify-tech-5.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-5.webp",
+              "mimeType": "image/webp",
+              "filesize": 132218,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "697b98c10ff49800011083f3",
+          "title": "Data Visualization & Analytics",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Standard Shopify reporting often lacks the granular depth required to analyze complex, multi-channel e-commerce operations.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We engineer custom dashboards and real-time data pipelines that aggregate your storefront metrics with external ERP or marketing sources. This provides a centralized, accurate view of profitability, customer cohorts, and inventory forecasting.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 326,
+              "alt": "shopify-tech-6",
+              "updatedAt": "2026-03-06T17:28:09.435Z",
+              "createdAt": "2026-03-06T17:28:09.435Z",
+              "url": "/api/media/file/shopify-tech-6.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-6.webp",
+              "mimeType": "image/webp",
+              "filesize": 217786,
+              "width": 2400,
+              "height": 3200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 327,
+              "alt": "shopify-tech-7",
+              "updatedAt": "2026-03-06T17:28:10.752Z",
+              "createdAt": "2026-03-06T17:28:10.752Z",
+              "url": "/api/media/file/shopify-tech-7.webp",
+              "thumbnailURL": null,
+              "filename": "shopify-tech-7.webp",
+              "mimeType": "image/webp",
+              "filesize": 153588,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "",
+        "jobDescription": ""
+      },
+      "metaTitle": "Shopify Tech | Shopify Custom Development | LOUD",
+      "metaDescription": "We architect custom e-commerce ecosystems for scaling brands that have outgrown standard Shopify capabilities.",
+      "updatedAt": "2026-03-12T09:33:42.362Z",
+      "createdAt": "2026-01-29T17:28:33.562Z"
+    },
+    "allProjects": null
+  },
+  "whuis": {
+    "caseStudy": {
+      "id": 1,
+      "slug": "whuis",
+      "slugLock": true,
+      "name": "Whuis",
+      "link": "https://whuis.com",
+      "linkLabel": "Website",
+      "previewImage": {
+        "id": 291,
+        "alt": "whuis-1.jpg",
+        "updatedAt": "2026-03-05T08:32:19.855Z",
+        "createdAt": "2026-03-05T08:32:19.855Z",
+        "url": "/api/media/file/whuis-1.jpg",
+        "thumbnailURL": null,
+        "filename": "whuis-1.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 246223,
+        "width": 1920,
+        "height": 1280,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "Real Estate Intelligence Platform",
+      "projectTypeLabel": "TECH STACK",
+      "stageLabel": "PRODUCT GOAL",
+      "deliverablesLabel": "DELIVERABLES",
+      "projectType": [
+        "Marketing Website",
+        "Mobile App",
+        "Real-Time Dashboard"
+      ],
+      "stage": "Real Estate Intelligence Platform",
+      "deliverables": [
+        "Product Design",
+        "Marketing Site",
+        "Engineering"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "+25.000 Monthly Users",
+      "industryName": "Real Estate",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Born to streamline complex verification processes, Whuis brings data, documents, and insights together into a single, intelligent platform. Designed for professionals and everyday users alike, it transforms slow, fragmented workflows into a seamless, transparent experience.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 288,
+        "alt": "whuis-cover.jpg",
+        "updatedAt": "2026-03-04T17:17:42.165Z",
+        "createdAt": "2026-03-04T17:14:31.622Z",
+        "url": "/api/media/file/whuis-cover-1.jpg",
+        "thumbnailURL": null,
+        "filename": "whuis-cover-1.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 656812,
+        "width": 2400,
+        "height": 1350,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "LOUD x WHUIS",
+      "functionalities": [
+        {
+          "id": "68adc3bc5accfa049b2f8d34",
+          "title": "Real-Time Monitoring",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Whuis tracks changes in property ownership and official records, notifying users instantly and unlocking new opportunities ahead of the market.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 291,
+              "alt": "whuis-1.jpg",
+              "updatedAt": "2026-03-05T08:32:19.855Z",
+              "createdAt": "2026-03-05T08:32:19.855Z",
+              "url": "/api/media/file/whuis-1.jpg",
+              "thumbnailURL": null,
+              "filename": "whuis-1.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 246223,
+              "width": 1920,
+              "height": 1280,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 289,
+              "alt": "whuis-2.png",
+              "updatedAt": "2026-03-05T08:14:42.263Z",
+              "createdAt": "2026-03-05T08:14:42.263Z",
+              "url": "/api/media/file/whuis-2.png",
+              "thumbnailURL": null,
+              "filename": "whuis-2.png",
+              "mimeType": "image/png",
+              "filesize": 297676,
+              "width": 1600,
+              "height": 1200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 290,
+              "alt": "whuis-3.jpg",
+              "updatedAt": "2026-03-05T08:22:28.694Z",
+              "createdAt": "2026-03-05T08:22:28.694Z",
+              "url": "/api/media/file/whuis-3.jpg",
+              "thumbnailURL": null,
+              "filename": "whuis-3.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 341484,
+              "width": 1920,
+              "height": 2880,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "68adc3e25accfa049b2f8d35",
+          "title": "Territorial Insights",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Whuis lets you explore any area with precision, mapping property ownership, asset distribution and key territorial patterns. A powerful way to unlock insights that traditional tools can’t reveal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Through advanced geographic queries, you can instantly identify owners within a selected zone, monitor changes and discover opportunities before competitors. Location data becomes a strategic advantage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 284,
+              "alt": "whuis-4.png",
+              "updatedAt": "2026-03-04T16:56:59.655Z",
+              "createdAt": "2026-03-04T16:56:59.655Z",
+              "url": "/api/media/file/whuis-4.png",
+              "thumbnailURL": null,
+              "filename": "whuis-4.png",
+              "mimeType": "image/png",
+              "filesize": 572941,
+              "width": 1600,
+              "height": 1200,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 286,
+              "alt": "whuis-5.jpg",
+              "updatedAt": "2026-03-04T17:04:47.027Z",
+              "createdAt": "2026-03-04T17:04:47.027Z",
+              "url": "/api/media/file/whuis-5.jpg",
+              "thumbnailURL": null,
+              "filename": "whuis-5.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 356849,
+              "width": 1728,
+              "height": 1152,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "68adc4005accfa049b2f8d36",
+          "title": "Instant Property & Documents Verification",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Whuis centralizes ownership details, cadastral data, and official records into a single view—making property checks faster, clearer, and fully reliable.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Title deeds, floor plans, appraisals and official records are retrieved automatically from certified sources, reducing hours of manual work to just a few seconds.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 285,
+              "alt": "whuis-6.png",
+              "updatedAt": "2026-03-04T16:57:19.840Z",
+              "createdAt": "2026-03-04T16:57:19.840Z",
+              "url": "/api/media/file/whuis-6.png",
+              "thumbnailURL": null,
+              "filename": "whuis-6.png",
+              "mimeType": "image/png",
+              "filesize": 505731,
+              "width": 1339,
+              "height": 1570,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 287,
+              "alt": "whuis-7.jpg",
+              "updatedAt": "2026-03-04T17:08:23.393Z",
+              "createdAt": "2026-03-04T17:08:23.393Z",
+              "url": "/api/media/file/whuis-7.jpg",
+              "thumbnailURL": null,
+              "filename": "whuis-7.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 583020,
+              "width": 1920,
+              "height": 1280,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " Working with LOUD was a real game-changer. Their ability to combine design, technology and strategy allowed us to turn a complex idea into a powerful product that users truly love. ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "DANIELE MANCINI",
+        "jobDescription": "Founder & CEO  -  GO NEXT GROUP"
+      },
+      "metaTitle": "Whuis.com | Real Estate Intelligence Platform | LOUD",
+      "metaDescription": "Born to streamline complex verification processes, Whuis brings data, documents, and insights together into a single, intelligent platform. Designed for professionals and everyday users alike, it transforms slow, fragmented workflows into a seamless, transparent experience.",
+      "updatedAt": "2026-03-12T09:34:22.006Z",
+      "createdAt": "2025-08-26T14:27:01.963Z"
+    },
+    "allProjects": null
+  },
+  "witz": {
+    "caseStudy": {
+      "id": 6,
+      "slug": "witz",
+      "slugLock": true,
+      "name": "WITZ",
+      "link": "https://witzapp.com/",
+      "linkLabel": "Download it",
+      "previewImage": {
+        "id": 103,
+        "alt": "home-witz.jpg",
+        "updatedAt": "2026-01-20T18:41:58.680Z",
+        "createdAt": "2026-01-20T18:41:58.680Z",
+        "url": "/api/media/file/home-witz.jpg",
+        "thumbnailURL": null,
+        "filename": "home-witz.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 767446,
+        "width": 3140,
+        "height": 1570,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "previewDescription": "AI-Powered Quiz Game",
+      "projectTypeLabel": "FOCUS AREAS",
+      "stageLabel": "GAME CONCEPT",
+      "deliverablesLabel": "SERVICES",
+      "projectType": [
+        "Marketing",
+        "Mobile App"
+      ],
+      "stage": "AI-Powered Quiz Game ",
+      "deliverables": [
+        "Product Design",
+        "Engineering",
+        "Mobile App",
+        "Marketing"
+      ],
+      "status": "Live Now",
+      "numberOfUsers": "+5.000 Daily Game Played",
+      "industryName": "Mobile Apps & Artificial Intelligence",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Multiplayer trivia game that lets you challenge friends with constantly updated quizzes on topics tailored to your interests",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "mainPic": {
+        "id": 103,
+        "alt": "home-witz.jpg",
+        "updatedAt": "2026-01-20T18:41:58.680Z",
+        "createdAt": "2026-01-20T18:41:58.680Z",
+        "url": "/api/media/file/home-witz.jpg",
+        "thumbnailURL": null,
+        "filename": "home-witz.jpg",
+        "mimeType": "image/jpeg",
+        "filesize": 767446,
+        "width": 3140,
+        "height": 1570,
+        "focalX": 50,
+        "focalY": 50
+      },
+      "loudX": "WITZ",
+      "functionalities": [
+        {
+          "id": "696f90ad174d990001523e1a",
+          "title": "Thematic Quizzes",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Curated quiz packs on specific topics – from geography and sports to TV series and niche local culture. Players don’t just answer random questions: they “specialize” in the themes they care about and collect rewards as they master each one.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-1",
+          "secondDescription": null,
+          "gallery": [
+            {
+              "id": 200,
+              "alt": "with-preview-home.jpg",
+              "updatedAt": "2026-01-26T16:32:44.655Z",
+              "createdAt": "2026-01-26T16:32:44.655Z",
+              "url": "/api/media/file/with-preview-home.jpg",
+              "thumbnailURL": null,
+              "filename": "with-preview-home.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 273345,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 204,
+              "alt": "witz-preview-shop-themes.jpg",
+              "updatedAt": "2026-01-26T16:36:03.680Z",
+              "createdAt": "2026-01-26T16:36:03.679Z",
+              "url": "/api/media/file/witz-preview-shop-themes.jpg",
+              "thumbnailURL": null,
+              "filename": "witz-preview-shop-themes.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 846801,
+              "width": 3140,
+              "height": 1570,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 201,
+              "alt": "with-preview-theme-4.jpg",
+              "updatedAt": "2026-01-26T16:32:44.855Z",
+              "createdAt": "2026-01-26T16:32:44.855Z",
+              "url": "/api/media/file/with-preview-theme-4.jpg",
+              "thumbnailURL": null,
+              "filename": "with-preview-theme-4.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 756690,
+              "width": 3938,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "696f90ad174d990001523e1b",
+          "title": "Subscription & Purchases",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We combines ads, in-app purchases, and subscriptions to keep both the player experience and the business sustainable. Light, well-timed ads let casual users play for free and discover new themes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-2",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Targeted in-app purchases unlock specific quiz packs, cosmetics, or special modes people actually care about, instead of generic paywalls. On top of that, a subscription tier gives power users access to premium themes, fewer interruptions, and early access to new content drops.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 202,
+              "alt": "with-preview-shop-2.jpg",
+              "updatedAt": "2026-01-26T16:32:44.926Z",
+              "createdAt": "2026-01-26T16:32:44.926Z",
+              "url": "/api/media/file/with-preview-shop-2.jpg",
+              "thumbnailURL": null,
+              "filename": "with-preview-shop-2.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 622690,
+              "width": 2786,
+              "height": 3278,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 203,
+              "alt": "with-preview-shop-sub.jpg",
+              "updatedAt": "2026-01-26T16:32:44.994Z",
+              "createdAt": "2026-01-26T16:32:44.994Z",
+              "url": "/api/media/file/with-preview-shop-sub.jpg",
+              "thumbnailURL": null,
+              "filename": "with-preview-shop-sub.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 553794,
+              "width": 3200,
+              "height": 2400,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        },
+        {
+          "id": "696f90ad174d990001523e1c",
+          "title": "AI-Powered",
+          "description": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "AI as a content engine to power highly specific and local quiz topics that traditional trivia games rarely touch.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "layout": "layout-3",
+          "secondDescription": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "That helps us generate and update structured questions on niche themes, adapt them to each market’s language and references, and keep them fresh over time by adding new facts and retiring outdated ones.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": "ltr",
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": "ltr"
+            }
+          },
+          "gallery": [
+            {
+              "id": 205,
+              "alt": "witz-ai-worlds.jpg",
+              "updatedAt": "2026-01-26T16:44:18.014Z",
+              "createdAt": "2026-01-26T16:44:18.014Z",
+              "url": "/api/media/file/witz-ai-worlds.jpg",
+              "thumbnailURL": null,
+              "filename": "witz-ai-worlds.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 595356,
+              "width": 3140,
+              "height": 1570,
+              "focalX": 50,
+              "focalY": 50
+            },
+            {
+              "id": 206,
+              "alt": "witz-ai-worlds-ui.jpg",
+              "updatedAt": "2026-01-26T16:44:18.082Z",
+              "createdAt": "2026-01-26T16:44:18.082Z",
+              "url": "/api/media/file/witz-ai-worlds-ui.jpg",
+              "thumbnailURL": null,
+              "filename": "witz-ai-worlds-ui.jpg",
+              "mimeType": "image/jpeg",
+              "filesize": 469498,
+              "width": 2708,
+              "height": 3416,
+              "focalX": 50,
+              "focalY": 50
+            }
+          ]
+        }
+      ],
+      "cit": {
+        "citDesc": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "“",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": " My name is Tommaso and I am visually impaired. This quiz game is very accessible even for users with visual disabilities, and for this reason the developers deserve a lot of praise. Keep up the great work! ",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  },
+                  {
+                    "mode": "normal",
+                    "text": "”",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 64,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "textStyle": "",
+                "textFormat": 64
+              }
+            ],
+            "direction": "ltr",
+            "textFormat": 64
+          }
+        },
+        "author": "TOMMASO BATTISTA",
+        "jobDescription": "WITZ - AppStore"
+      },
+      "metaTitle": "WITZ | AI-Powered Quiz Game | LOUD",
+      "metaDescription": "Multiplayer trivia game that lets you challenge friends with constantly updated quizzes on topics tailored to your interests",
+      "updatedAt": "2026-03-12T09:34:37.046Z",
+      "createdAt": "2026-01-20T14:26:53.476Z"
+    },
+    "allProjects": null
+  }
+}
