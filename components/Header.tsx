@@ -300,7 +300,7 @@ export default function Header({
           </nav>
 
           <div className="flex items-center justify-end gap-4 lg:justify-self-end">
-            <div className="hidden w-3/12 justify-end lg:flex">
+            <div className="hidden shrink-0 lg:block">
               <LiveClock isWhiteBg={headerIsWhite} />
             </div>
             <button

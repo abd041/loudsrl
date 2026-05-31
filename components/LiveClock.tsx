@@ -11,6 +11,12 @@ type GeoData = {
   sunset: string;
 };
 
+type TimeParts = {
+  time: string;
+  meridiem: string;
+  label: string;
+};
+
 function isGeoData(data: GeoData | { error?: string }): data is GeoData {
   return "timezone" in data && "country" in data;
 }
@@ -23,12 +29,26 @@ function browserTimezone() {
   return Intl.DateTimeFormat().resolvedOptions().timeZone;
 }
 
-function formatLocalTime(timezone: string) {
-  return new Date().toLocaleTimeString("en-US", {
+function formatLocalTime(timezone: string): TimeParts {
+  const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: timezone,
     hour: "numeric",
     minute: "2-digit",
-  });
+    hour12: true,
+  }).formatToParts(new Date());
+
+  const hour = parts.find((part) => part.type === "hour")?.value ?? "";
+  const minute = parts.find((part) => part.type === "minute")?.value ?? "";
+  const dayPeriod =
+    parts.find((part) => part.type === "dayPeriod")?.value.toUpperCase() ?? "";
+
+  const time = `${hour}:${minute}`;
+
+  return {
+    time,
+    meridiem: dayPeriod,
+    label: `${time} ${dayPeriod}`,
+  };
 }
 
 function isDaytimeFromGeo(geoData: GeoData) {
@@ -52,7 +72,7 @@ function isDaytimeFromTimezone(timezone: string) {
 export default function LiveClock({ isWhiteBg = false }: LiveClockProps) {
   const [geoData, setGeoData] = useState<GeoData | null>(null);
   const [timezone, setTimezone] = useState(browserTimezone);
-  const [localTime, setLocalTime] = useState("");
+  const [timeParts, setTimeParts] = useState<TimeParts | null>(null);
   const [loading, setLoading] = useState(true);
   const [daytime, setDaytime] = useState(true);
 
@@ -86,7 +106,7 @@ export default function LiveClock({ isWhiteBg = false }: LiveClockProps) {
 
   useEffect(() => {
     const tick = () => {
-      setLocalTime(formatLocalTime(timezone));
+      setTimeParts(formatLocalTime(timezone));
       setDaytime(
         geoData ? isDaytimeFromGeo(geoData) : isDaytimeFromTimezone(timezone)
       );
@@ -97,42 +117,50 @@ export default function LiveClock({ isWhiteBg = false }: LiveClockProps) {
     return () => window.clearInterval(id);
   }, [geoData, timezone]);
 
-  if (loading && !localTime) {
+  if (loading && !timeParts) {
     return (
       <div
         className={cn(
-          "flex w-full justify-end gap-2 text-[0.625rem] font-semibold",
+          "flex items-center justify-end",
           isWhiteBg ? "text-black" : "text-white"
         )}
       >
-        <Loader2 size={14} className="animate-spin" aria-hidden />
+        <Loader2 size={16} className="animate-spin" aria-hidden />
       </div>
     );
   }
+
+  if (!timeParts) return null;
 
   const iconColor = isWhiteBg ? "#000" : "#fff";
 
   return (
     <div
       className={cn(
-        "flex w-full items-center justify-end gap-2 text-[0.625rem] font-semibold",
+        "flex shrink-0 items-center gap-2",
         isWhiteBg ? "text-black" : "text-white"
       )}
     >
-      {geoData?.country ? <p>{geoData.country.toUpperCase()}</p> : null}
-      <p>{localTime}</p>
-      <p
+      <time
+        dateTime={timeParts.label}
+        className="whitespace-nowrap text-[0.8125rem] font-bold leading-none tracking-tight"
+      >
+        {timeParts.time}{" "}
+        <span className="font-bold">{timeParts.meridiem}</span>
+      </time>
+      <span
         className={cn(
-          "flex h-5 w-5 items-center justify-center rounded-full",
+          "flex h-6 w-6 shrink-0 items-center justify-center rounded-full",
           isWhiteBg ? "bg-black/10" : "bg-white/20"
         )}
+        aria-hidden
       >
         {daytime ? (
-          <Sun fill={iconColor} size={10} aria-hidden />
+          <Sun fill={iconColor} size={11} strokeWidth={0} />
         ) : (
-          <Moon fill={iconColor} size={10} aria-hidden />
+          <Moon fill={iconColor} size={11} strokeWidth={0} />
         )}
-      </p>
+      </span>
     </div>
   );
 }
