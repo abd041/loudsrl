@@ -13,6 +13,8 @@ type LiveClockProps = {
   isWhiteBg?: boolean;
 };
 
+const SWISS_TIMEZONE = "Europe/Zurich";
+
 function browserTimezone() {
   return Intl.DateTimeFormat().resolvedOptions().timeZone;
 }
@@ -92,35 +94,22 @@ function ClockSunIcon() {
 }
 
 export default function LiveClock({ isWhiteBg = false }: LiveClockProps) {
-  const [timezone, setTimezone] = useState(browserTimezone);
+  const [timezone, setTimezone] = useState(() => SWISS_TIMEZONE);
   const [timeParts, setTimeParts] = useState<TimeParts>(() =>
-    formatLocalTime(browserTimezone())
+    formatLocalTime(SWISS_TIMEZONE)
   );
   const [daytime, setDaytime] = useState(() =>
-    isDaytimeInTimezone(browserTimezone())
+    isDaytimeInTimezone(SWISS_TIMEZONE)
   );
 
   useEffect(() => {
-    let cancelled = false;
-
-    fetch("/api/location")
-      .then(async (res) => {
-        if (!res.ok) return null;
-        const data = (await res.json()) as { timezone?: string; error?: string };
-        if (!data.timezone || data.error) return null;
-        return data.timezone;
-      })
-      .then((resolvedTimezone) => {
-        if (cancelled || !resolvedTimezone) return;
-        setTimezone(resolvedTimezone);
-      })
-      .catch(() => {
-        /* Keep browser timezone fallback */
-      });
-
-    return () => {
-      cancelled = true;
-    };
+    // If Intl doesn't support Europe/Zurich (unlikely), fall back to browser timezone.
+    try {
+      // eslint-disable-next-line no-new
+      new Intl.DateTimeFormat("en-US", { timeZone: SWISS_TIMEZONE }).format();
+    } catch {
+      setTimezone(browserTimezone());
+    }
   }, []);
 
   useEffect(() => {

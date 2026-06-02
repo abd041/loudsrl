@@ -42,6 +42,10 @@ next-env.d.ts
 !/docs/lighthouse/.gitkeep
 /docs/parity/last-failure-report.json
 
+# Local parity artifacts (generated)
+/scripts/.footer-parity/
+/scripts/.pillar-footer-bg/
+
 # Bundle analyzer
 .next/analyze/
 

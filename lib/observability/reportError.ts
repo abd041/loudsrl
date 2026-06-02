@@ -8,32 +8,17 @@ function serializeError(error: unknown) {
 }
 
 /**
- * Central error reporter — dev console + optional webhook (no third-party required).
- * For Sentry, integrate @sentry/nextjs and call Sentry.captureException from here.
+ * Minimal client-side error reporter.
+ * Kept intentionally simple so shipping pages don't depend on external services.
  */
-export function reportError(
-  error: unknown,
-  context?: ErrorContext
-): void {
-  const payload = {
-    ...serializeError(error),
-    context,
-    url: typeof window !== "undefined" ? window.location.href : undefined,
-    ts: new Date().toISOString(),
-  };
-
-  if (process.env.NODE_ENV === "development") {
-    console.error("[reportError]", payload);
-  }
-
-  const webhook = process.env.NEXT_PUBLIC_ERROR_REPORT_URL;
-  if (webhook && typeof window !== "undefined") {
-    void fetch(webhook, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ type: "error", ...payload }),
-      keepalive: true,
-    }).catch(() => {});
+export function reportError(error: unknown, context?: ErrorContext): void {
+  if (process.env.NODE_ENV !== "production") {
+    console.error("[reportError]", {
+      ...serializeError(error),
+      context,
+      url: typeof window !== "undefined" ? window.location.href : undefined,
+      ts: new Date().toISOString(),
+    });
   }
 }
 
@@ -42,23 +27,8 @@ export function reportMessage(
   level: "info" | "warning" | "error" = "info",
   context?: ErrorContext
 ): void {
-  if (process.env.NODE_ENV === "development" && level !== "info") {
+  if (process.env.NODE_ENV !== "production" && level !== "info") {
     console.warn(`[${level}]`, message, context);
   }
-
-  const webhook = process.env.NEXT_PUBLIC_ERROR_REPORT_URL;
-  if (webhook && typeof window !== "undefined" && level !== "info") {
-    void fetch(webhook, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        type: "message",
-        level,
-        message,
-        context,
-        ts: new Date().toISOString(),
-      }),
-      keepalive: true,
-    }).catch(() => {});
-  }
 }
+

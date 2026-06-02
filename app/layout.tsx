@@ -10,7 +10,6 @@ import RouteLiquidSync from "@/components/RouteLiquidSync";
 import FooterLiquidBackdrop from "@/components/FooterLiquidBackdrop";
 import BackHomeToast from "@/components/shared/BackHomeToast";
 import ErrorBoundary from "@/components/ErrorBoundary";
-import MonitoringProvider from "@/components/providers/MonitoringProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -123,21 +122,19 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <MonitoringProvider>
-          <AppStoreProvider>
-            <CursorProvider>
-              <RouteLiquidSync />
-              <FooterLiquidBackdrop />
-              <SmoothScrollProvider>
-                <CustomCursor />
-                <BackHomeToast />
-                <ErrorBoundary name="root">
-                  <PageLoader>{children}</PageLoader>
-                </ErrorBoundary>
-              </SmoothScrollProvider>
-            </CursorProvider>
-          </AppStoreProvider>
-        </MonitoringProvider>
+        <AppStoreProvider>
+          <CursorProvider>
+            <RouteLiquidSync />
+            <FooterLiquidBackdrop />
+            <SmoothScrollProvider>
+              <CustomCursor />
+              <BackHomeToast />
+              <ErrorBoundary name="root">
+                <PageLoader>{children}</PageLoader>
+              </ErrorBoundary>
+            </SmoothScrollProvider>
+          </CursorProvider>
+        </AppStoreProvider>
       </body>
     </html>
   );

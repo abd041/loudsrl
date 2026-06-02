@@ -30,8 +30,12 @@ export default function ManifestoPageClient() {
         <RouteHero
           activeIndex={liquidIndex}
           title="We are in a constant state of becoming."
+          showDot={false}
+          showScrollCue
+          scrollCueTargetId="manifesto-after-hero"
         />
 
+        <div id="manifesto-after-hero" className="h-px" aria-hidden />
         <ManifestoPrinciplesHover principles={manifestoPrinciples} />
         <ManifestoCapabilitiesSection
           deliverables={manifestoDeliverables}
