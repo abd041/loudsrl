@@ -41,7 +41,7 @@ jobs:
           CI: true
 
       - name: Deploy to Vercel
-        if: ${{ secrets.VERCEL_TOKEN != '' }}
+        if: ${{ secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -51,5 +51,5 @@ jobs:
           working-directory: ./
 
       - name: Deploy skipped
-        if: ${{ secrets.VERCEL_TOKEN == '' }}
+        if: ${{ secrets.VERCEL_TOKEN == '' || secrets.VERCEL_ORG_ID == '' || secrets.VERCEL_PROJECT_ID == '' }}
         run: echo "::warning::Set VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID to enable GitHub Actions deploy."
