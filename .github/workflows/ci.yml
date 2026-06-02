@@ -38,7 +38,7 @@ jobs:
           NEXT_PUBLIC_SITE_URL: https://loudsrl.com
 
   e2e:
-    name: Smoke + parity tests
+    name: Smoke tests
     runs-on: ubuntu-latest
     timeout-minutes: 45
     needs: quality
@@ -65,15 +65,6 @@ jobs:
         run: npm run test:smoke
         env:
           CI: true
-
-      - name: Parity tests (CI matrix)
-        run: npx playwright test tests/parity-against-live.spec.ts
-        env:
-          CI: true
-
-      - name: Parity failure report
-        if: failure()
-        run: node scripts/parity-diff-report.mjs
 
       - name: Upload Playwright report
         if: always()

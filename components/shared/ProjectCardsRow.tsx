@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getCaseStudy } from "@/data/caseStudies";
 import { mediaSrc } from "@/lib/media";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";

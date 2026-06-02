@@ -40,7 +40,7 @@ export default function StudioHero() {
   const overlayRef = useRef<HTMLDivElement>(null);
   const playRef = useRef<HTMLButtonElement>(null);
   const captionRef = useRef<HTMLParagraphElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [, setIsPlaying] = useState(false);
   const [showChrome, setShowChrome] = useState(true);
 
   useLayoutEffect(() => {
@@ -76,7 +76,6 @@ export default function StudioHero() {
 
     const hideChrome = () => {
       setShowChrome(false);
-      setIsPlaying(true);
     };
 
     const targets = [overlayRef.current, playRef.current, captionRef.current].filter(

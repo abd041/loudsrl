@@ -327,7 +327,7 @@ export default function CustomCursor() {
     if (!enabled || !forceLink) return;
 
     const { x, y } = lastPointerRef.current;
-    const { mode, colorMode } = resolveCursorState(x, y);
+    const { colorMode } = resolveCursorState(x, y);
 
     if (modeRef.current !== "link") {
       modeRef.current = "link";
