@@ -8,6 +8,7 @@
     "clean": "node scripts/clean-next.mjs",
     "prebuild": "node scripts/check-dev-not-running.mjs",
     "build": "next build",
+    "build:ci": "node scripts/clean-next.mjs && npm run build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",

@@ -53,8 +53,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Clean and build
+        run: node scripts/clean-next.mjs && npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://loudsrl.com
 
@@ -65,6 +65,8 @@ jobs:
         run: npm run test:smoke
         env:
           CI: true
+          # Avoid production-only contact 503 when secrets are not configured in GHA
+          CONTACT_REQUIRE_WEBHOOK: "false"
 
       - name: Upload Playwright report
         if: always()
@@ -92,8 +94,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Clean and build
+        run: node scripts/clean-next.mjs && npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://loudsrl.com
 

@@ -68,11 +68,9 @@ npm run test:parity:capture
 
 GitHub Actions workflows in [`.github/workflows/`](.github/workflows/):
 
-- **`ci.yml`** — PR + push: lint, typecheck, build, smoke, parity, Lighthouse
-- **`deploy.yml`** — main: smoke + Vercel production deploy
-- **`parity-weekly.yml`** — scheduled full parity matrix
+- **`ci.yml`** — PR + push: lint, typecheck, build, Playwright smoke tests, Lighthouse thresholds
 
-See [docs/DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md) and [docs/ENGINEERING_REPORT.md](docs/ENGINEERING_REPORT.md).
+Production deploys use **Vercel Git integration** (not GitHub Actions). `vercel.json` runs a clean production build and pins functions to `fra1`.
 
 ## Documentation
 
@@ -88,10 +86,11 @@ See [docs/DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md) and [docs/ENGINEERING_R
 
 | Issue | Fix |
 |-------|-----|
-| GSAP `vendor-chunks` error | `npm run clean && npm run dev` |
+| `vendor-chunks/motion-dom.js` or GSAP errors | Stop dev server, then `npm run clean && npm run build` |
 | Playwright browsers missing | `npx playwright install --with-deps chromium` |
 | Parity fails on new route | Capture baseline or add route to `PARITY_CI_ROUTES` |
-| Contact 503 in production | Set `CONTACT_WEBHOOK_URL` |
+| Contact 503 in production | Set `RESEND_API_KEY` + `CONTACT_NOTIFY_EMAIL` and/or `CONTACT_WEBHOOK_URL` in Vercel |
+| Vercel deploy fails (regions) | Hobby plan allows one region only — use `"regions": ["fra1"]` in `vercel.json` |
 | Lighthouse perf fails on home | Home uses WebGL; CI allows lower threshold (`LH_PERF_MIN_HOME`) |
 
 ## License
