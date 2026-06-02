@@ -10,6 +10,7 @@ import RouteLiquidSync from "@/components/RouteLiquidSync";
 import FooterLiquidBackdrop from "@/components/FooterLiquidBackdrop";
 import BackHomeToast from "@/components/shared/BackHomeToast";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import ScrollUnlock from "@/components/ScrollUnlock";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -125,6 +126,7 @@ export default function RootLayout({
         <AppStoreProvider>
           <CursorProvider>
             <RouteLiquidSync />
+            <ScrollUnlock />
             <FooterLiquidBackdrop />
             <SmoothScrollProvider>
               <CustomCursor />
