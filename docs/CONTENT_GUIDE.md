@@ -189,7 +189,7 @@ Every file in `data/` and what it controls:
 | Industries | `industryPages.ts` | `public/media/` |
 | Manifesto | `manifesto.ts`, `services.ts` | `public/media/deliverables/` |
 | Studio | `studio.ts` | `public/media/studio/` |
-| Contact | `contact.ts` + `app/contact-us/page.tsx` (email) | — |
+| Contact | `contact.ts`, `data/site.ts` (visible email), `.env.local` (form inbox) | — |
 | Case studies | `scripts/case-studies-live.json` → `caseStudies.ts` | `public/media/` |
 | All pages (nav/footer) | `navigation.ts`, `footer.ts` | `public/logos/` |
 | SEO (global) | `app/layout.tsx` | `public/favicon-*.ico` |
@@ -852,7 +852,7 @@ These slugs must exist in case studies.
 |---|---------|--------|
 | 1 | Page label | Hardcoded: `"FIRST STEP OF OUR RELATIONSHIP :)"` |
 | 2 | Tab navigation | `contactTabs` |
-| 3 | Email fallback | Hardcoded: `hello@loudsrl.com` in `page.tsx` |
+| 3 | Email fallback (mailto on page) | `data/site.ts` → `site.email` |
 | 4 | Contact form | `ContactForm.tsx` + options from `contact.ts` |
 | 5 | "What's next" steps | `contactSteps` |
 | 6 | Featured case studies | `contactFeatured` per tab |
@@ -870,9 +870,9 @@ These slugs must exist in case studies.
 
 ```ts
 export const contactFeatured: Record<ContactTabId, string[]> = {
-  business: ["shift2cal", "shiftpilot", "shopify-tech"],
-  startup: ["balloon", "shopify-tech", "shiftpilot"],
-  career: ["shopify-tech", "ennevolte", "shift2cal"],
+  business: ["shiftpilot", "bike-room", "shopify-tech"],
+  startup: ["aste360", "shopify-tech", "ennevolte"],
+  career: ["shopify-tech", "whuis", "ennevolte"],
 };
 ```
 
@@ -904,13 +904,120 @@ Change slugs to swap which project cards appear. Each slug must exist in case st
 | `Select your budget range` | `ContactForm.tsx` |
 | `Tell us about your project...` | `ContactForm.tsx` |
 
-### Important: form does not send email
+### How form submissions are delivered
 
-The form's `onSubmit` prevents default — **no backend is connected**. Submissions go nowhere until a developer integrates email (Resend, Formspree, custom API, etc.).
+When a visitor clicks **Send us message**, the browser POSTs to **`/api/contact`**. The server validates the fields, then sends you an email via **[Resend](https://resend.com)** (if configured).
 
-### Email address
+**Technical files (developers):**
 
-Search `hello@loudsrl.com` in `app/contact-us/page.tsx` — **4 occurrences** (2 mailto links + 2 visible text).
+| File | Role |
+|------|------|
+| `components/ContactForm.tsx` | Form UI |
+| `lib/submitContact.ts` | POST to API (JSON or multipart with files) |
+| `app/api/contact/route.ts` | Validation, rate limit, email + optional webhook |
+| `lib/sendContactEmail.ts` | Builds HTML email and calls Resend API |
+
+**Optional:** `CONTACT_WEBHOOK_URL` can still POST the same JSON to Zapier, a CRM, or Payload — in addition to email.
+
+---
+
+### Email setup for the client (Resend)
+
+Form notifications are **not** stored in `data/*.ts`. They use **environment variables** (local file `.env.local` and your hosting dashboard, e.g. Vercel).
+
+#### Step 1 — Resend account & API key
+
+1. Sign up at [resend.com](https://resend.com) (free tier is enough to start).
+2. Go to **API Keys** → create a key.
+3. Copy the key (starts with `re_`).
+
+#### Step 2 — Where submissions are sent (`CONTACT_NOTIFY_EMAIL`)
+
+Set the inbox that receives every form submission:
+
+```env
+CONTACT_NOTIFY_EMAIL=client@example.com
+```
+
+Replace `client@example.com` with the client’s real address (e.g. `abdullahrauf440@gmail.com`).
+
+#### Step 3 — Add variables to the project
+
+**Local development** — create or edit `.env.local` in the project root (never commit this file):
+
+```env
+RESEND_API_KEY=re_paste_your_resend_api_key_here
+CONTACT_NOTIFY_EMAIL=client@example.com
+```
+
+Restart the dev server after saving: `npm run dev`.
+
+**Production (Vercel or similar)** — add the same two variables in the host’s **Environment Variables** for Production (and Preview if needed), then redeploy.
+
+See `.env.example` in the repo for the full list and comments.
+
+#### Step 4 — Verify the recipient email in Resend (free plan)
+
+On the free plan, emails are sent from `onboarding@resend.dev` and Resend only delivers to **verified** addresses.
+
+1. In Resend → verify the same address you put in `CONTACT_NOTIFY_EMAIL`.
+2. Submit a test on `/contact-us` and confirm the message arrives.
+
+#### Optional — custom “From” address
+
+After the client verifies their domain in Resend:
+
+```env
+CONTACT_FROM_EMAIL=LOUD Contact <contact@clientdomain.com>
+```
+
+#### Optional — webhook to CRM
+
+```env
+CONTACT_WEBHOOK_URL=https://your-zapier-or-crm-endpoint/hooks/contact
+```
+
+#### Production requirement
+
+If `CONTACT_REQUIRE_WEBHOOK=true` or the site runs on Vercel production, **at least one** of these must be set or the form returns “temporarily unavailable”:
+
+- `RESEND_API_KEY` + `CONTACT_NOTIFY_EMAIL`, **or**
+- `CONTACT_WEBHOOK_URL`
+
+---
+
+### Two different “email” settings (don’t confuse them)
+
+| What | Where to change | Purpose |
+|------|-----------------|--------|
+| **Email shown on the contact page** (“Hate contact forms?” + mailto link) | `data/site.ts` → `email` | Visitors see this and can email directly |
+| **Inbox for form submissions** | `.env.local` / Vercel → `CONTACT_NOTIFY_EMAIL` | Automatic email when someone uses the form |
+
+Example — client wants their Gmail on the page **and** as the form inbox:
+
+1. `data/site.ts`: `email: "client@gmail.com"`
+2. `.env.local`: `CONTACT_NOTIFY_EMAIL=client@gmail.com` + `RESEND_API_KEY=re_...`
+
+The contact page reads `site.email` from `data/site.ts` (not hardcoded in `page.tsx`).
+
+---
+
+### Changing the client later
+
+| Task | Action |
+|------|--------|
+| New notification inbox | Update `CONTACT_NOTIFY_EMAIL` in `.env.local` and Vercel, redeploy; verify the new address in Resend |
+| New Resend API key | Replace `RESEND_API_KEY` in env vars (rotate key in Resend dashboard if compromised) |
+| Email visible on `/contact-us` only | Edit `email` in `data/site.ts` |
+
+---
+
+### What the notification email contains
+
+- Project type, industry, budget range  
+- Deliverables (checkboxes)  
+- Full short description  
+- Attachments (JPG, PNG, WebP, GIF, PDF — up to 5 files, 2 MB each, 6 MB total)
 
 ---
 
@@ -1125,7 +1232,7 @@ Complete inventory of text **not** in `data/` files:
 |------|---------|
 | `FIRST STEP OF OUR RELATIONSHIP :)` | Page eyebrow |
 | `Hate contact forms?` | Above email |
-| `hello@loudsrl.com` | Email (×4) |
+| `{site.email}` from `data/site.ts` | Mailto + visible email (desktop + mobile) |
 | `What's next.` | Steps section label |
 | `Fourth base on a first date?` | Steps section headline |
 
@@ -1161,13 +1268,6 @@ Complete inventory of text **not** in `data/` files:
 | Text | Context |
 |------|---------|
 | `Be the next` | Default CTA button |
-
-### `components/CookieConsent.tsx`
-| Text | Context |
-|------|---------|
-| Full cookie banner paragraph | Legal copy |
-| `Accept only technical cookies` | Button |
-| `Accept all cookies` | Button |
 
 ### `components/FullscreenMenu.tsx` & `ShowIndustriesMenu.tsx`
 | Text | Context |
@@ -1265,7 +1365,30 @@ All form labels, placeholders, button text — see [§17](#17-contact-page--form
 
 ---
 
-### Tutorial F — Update a case study from CMS export
+### Tutorial F — Set up form emails for the client (Resend)
+
+Use this when the client should receive `/contact-us` submissions in their inbox.
+
+1. Create a [Resend](https://resend.com) account and an API key (`re_...`).
+2. In Resend, **verify** the client’s email address (required on the free plan).
+3. Open `.env.local` in the project root (copy from `.env.example` if missing).
+4. Set:
+   ```env
+   RESEND_API_KEY=re_paste_key_here
+   CONTACT_NOTIFY_EMAIL=client@example.com
+   ```
+5. To show the same address on the contact page, open `data/site.ts` and set:
+   ```ts
+   email: "client@example.com",
+   ```
+6. Run `npm run dev`, submit a test on `/contact-us`, confirm the email arrives.
+7. For production: add `RESEND_API_KEY` and `CONTACT_NOTIFY_EMAIL` in Vercel (or your host) → redeploy.
+
+**To switch to a different client later:** change `CONTACT_NOTIFY_EMAIL` (and verify the new address in Resend). Update `site.email` in `data/site.ts` if the public mailto should match.
+
+---
+
+### Tutorial G — Update a case study from CMS export
 
 1. Receive updated JSON from CMS (or edit `scripts/case-studies-live.json`)
 2. Find the project key e.g. `"witz": { "caseStudy": { ... } }`
@@ -1276,7 +1399,7 @@ All form labels, placeholders, button text — see [§17](#17-contact-page--form
 
 ---
 
-### Tutorial G — Change Studio video
+### Tutorial H — Change Studio video
 
 1. Export video as MP4 (H.264)
 2. Copy to `public/media/studio/loud-video-pres.mp4` (overwrite)
@@ -1286,7 +1409,7 @@ All form labels, placeholders, button text — see [§17](#17-contact-page--form
 
 ---
 
-### Tutorial H — Add a new industry (advanced — needs developer)
+### Tutorial I — Add a new industry (advanced — needs developer)
 
 Adding an industry requires:
 1. New entry in `data/industryPages.ts` with all required fields
@@ -1339,13 +1462,13 @@ Changes to `data/` files hot-reload automatically. New files in `public/` may ne
 ✅ Any `data/*.ts` file (except `caseStudies.ts`)  
 ✅ Any file in `public/`  
 ✅ `scripts/case-studies-live.json` + regenerate  
-✅ Email strings in `app/contact-us/page.tsx`  
+✅ Contact page visible email → `data/site.ts` → `email`  
 ✅ SEO in `app/layout.tsx`
 
 ### What needs a developer
 
 ⚠️ React components (`components/`, `app/page.tsx` hardcoded strings)  
-⚠️ Contact form backend / email delivery  
+⚠️ First-time Resend setup (`RESEND_API_KEY` in `.env.local` / Vercel)  
 ⚠️ New pages or routes  
 ⚠️ `liquidPresets.ts` advanced animation values  
 ⚠️ Cookie policy links (currently text only, no URLs)
@@ -1364,7 +1487,10 @@ Changes to `data/` files hot-reload automatically. New files in `public/` may ne
 | Homepage Think text wrong | Edited wrong file | Edit `pillars.ts` not `homeHeroPreviews.ts` for Think/Design/Develop |
 | Industry card wrong on homepage | Wrong field edited | Edit `homeDescription` / `imageBackground` in `industryPages.ts` |
 | Video won't play | Wrong codec or path | Use H.264 MP4; check `videoSrc` path |
-| Form submits but nothing happens | Expected — no backend | Integrate email API (developer task) |
+| Form submits but nothing happens locally | Missing env vars | Add `RESEND_API_KEY` + `CONTACT_NOTIFY_EMAIL` to `.env.local`; restart `npm run dev` |
+| Form “temporarily unavailable” on live site | No delivery configured on host | Set Resend env vars (or `CONTACT_WEBHOOK_URL`) in Vercel and redeploy |
+| Resend error / no email received | Recipient not verified | Verify `CONTACT_NOTIFY_EMAIL` in Resend dashboard (free plan) |
+| Wrong inbox receives forms | Wrong env var | Update `CONTACT_NOTIFY_EMAIL` on server; not `data/site.ts` alone |
 | TypeScript error after data edit | Syntax mistake | Check quotes, commas, brackets in `.ts` file |
 | Page 404 for case study | Invalid slug | Use slug from approved list in §18 |
 | Light logo on light background | Wrong array | White logos → `logosForDarkBackground`; black logos → `logosForLightBackground` |
@@ -1402,9 +1528,10 @@ Changes to `data/` files hot-reload automatically. New files in `public/` may ne
 
 ### Contact & conversion
 - [ ] Contact tabs & steps → `data/contact.ts`
-- [ ] Email address → `app/contact-us/page.tsx`
+- [ ] Visible email on contact page → `data/site.ts` → `email`
+- [ ] Form submission inbox → `CONTACT_NOTIFY_EMAIL` in `.env.local` / Vercel
+- [ ] Resend API key → `RESEND_API_KEY` in `.env.local` / Vercel (verify recipient in Resend)
 - [ ] Dual CTA copy & images → `data/dualCta.ts`
-- [ ] Cookie banner → `components/CookieConsent.tsx` (developer)
 
 ### Case studies
 - [ ] CMS JSON → `scripts/case-studies-live.json`
@@ -1414,4 +1541,4 @@ Changes to `data/` files hot-reload automatically. New files in `public/` may ne
 
 ---
 
-*Document version: Detailed Edition — covers LOUD Next.js site structure as of project audit. For form integration, new routes, or moving hardcoded copy into data files, contact your development team.*
+*Document version: Detailed Edition — includes Resend contact form delivery (`RESEND_API_KEY`, `CONTACT_NOTIFY_EMAIL`). For new routes or moving hardcoded copy into data files, contact your development team.*

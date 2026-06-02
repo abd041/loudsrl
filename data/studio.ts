@@ -77,8 +77,9 @@ export const studioWhyChoosingUs = [
 ];
 
 export const studioLiveSection = {
-  label: 'FROM 0 TO "UNICORN" CASE STUDY',
+  label: "FROM 0 TO \u201cUNICORN\u201d CASE STUDY",
   title: "Live Products",
 };
 
+/** Order and slugs match loudsrl.com/studio Live Products row */
 export const studioLiveProducts = ["witz", "whuis", "shift2cal"];

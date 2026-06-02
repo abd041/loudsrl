@@ -42,7 +42,7 @@ export const pillars: PillarData[] = [
     slug: "think",
     navLabel: "Think.",
     eyebrow: "PRODUCT STRATEGY",
-    heroTitle: "Making something that people want.",
+    heroTitle: "Making something\nthat people want.",
     heroBody:
       "Design the right digital product before you build it: LOUD turns ideas, data and user insight into a clear, validated product direction.",
     marqueeText: "Complex problems to a product plan",
@@ -77,7 +77,7 @@ export const pillars: PillarData[] = [
       {
         title: "Delivery & Planning",
         items: [
-          "Visual Design Approvation",
+          "Visual Design Approval",
           "Roadmap",
           "Deliverables",
           "Milestones",
@@ -151,7 +151,7 @@ export const pillars: PillarData[] = [
         summary:
           "From concept to delivery, LOUD structures plans, assets and milestones so your teams can build the product with clarity, speed and alignment.",
         items: [
-          "Visual Design Approvation",
+          "Visual Design Approval",
           "Roadmap",
           "Deliverables",
           "Milestones",
@@ -428,7 +428,7 @@ export const pillars: PillarData[] = [
     ],
     caseStudySlugs: ["whuis", "witz", "cercacasa"],
     showcaseLayout: "projects-first",
-    agencyCta: "Want to evolve your real estate company?",
+    agencyCta: "Want to build software that scales with your business?",
   },
 ];
 

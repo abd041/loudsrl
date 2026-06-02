@@ -23,11 +23,10 @@ export function getLiquidIndexForPath(pathname: string): number {
   return navIndex !== -1 ? navIndex + 1 : 0;
 }
 
+/** Only the homepage embeds liquid in-page; other routes use FooterLiquidBackdrop. */
 export function pathUsesLiquidHero(pathname: string): boolean {
   const clean = pathname.split("?")[0]?.split("#")[0] ?? pathname;
-  if (clean === "/") return true;
-  if (clean === "/studio" || clean.startsWith("/studio/")) return false;
-  return findNavIndexFromPath(clean) !== -1;
+  return clean === "/";
 }
 
 export function isPillarPath(pathname: string): boolean {

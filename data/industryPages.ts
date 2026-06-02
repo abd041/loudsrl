@@ -124,7 +124,7 @@ export const industryPages: IndustryPage[] = [
       projectSlug: "witz",
     },
     related: ["shiftpilot", "aste360"],
-    agencyCta: "Want to evolve your real estate company?",
+    agencyCta: "Want to evolve your business with AI?",
     nextSlug: "e-commerce",
   },
   {
@@ -212,7 +212,7 @@ export const industryPages: IndustryPage[] = [
       ctaLabel: "Case studio - BikeRoom",
     },
     related: ["bike-room", "shopify-tech", "ennevolte"],
-    agencyCta: "Want to evolve your real estate company?",
+    agencyCta: "Want to evolve your e-commerce company?",
     nextSlug: "mobile-apps",
   },
   {
@@ -293,7 +293,7 @@ export const industryPages: IndustryPage[] = [
       projectSlug: "witz",
     },
     related: ["shift2cal", "balloon", "witz"],
-    agencyCta: "Want to evolve your real estate company?",
+    agencyCta: "Want to evolve your mobile product?",
     nextSlug: "real-estate",
   },
   {

@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { footerNav } from "@/data/navigation";
 import { footer } from "@/data/footer";
+import { cn } from "@/lib/cn";
 
 function CircleArrowIcon() {
   return (
@@ -21,93 +24,109 @@ function CircleArrowIcon() {
   );
 }
 
+const COL_HEADER = "!font-dm text-xs text-white/50 mb-2.5";
+const COL_LINK_LI = "font-medium text-xs cursor-link";
+const COL_LINK_A = "py-2.5 transition-opacity duration-300 hover:opacity-60";
+
 export default function Footer() {
   return (
-    <footer className="relative cursor-force-white overflow-hidden bg-black text-white">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(255,255,255,0.04),transparent_55%),radial-gradient(ellipse_at_80%_80%,rgba(0,0,0,0.35),transparent_50%)]"
-      />
-
-      <div className="relative z-10 border-b border-white/30">
-        <div className="page-padding mx-auto flex max-w-6xl min-h-[200px] flex-col justify-between gap-10 pb-12 pt-10 md:min-h-[280px] md:flex-row md:items-end lg:min-h-[400px] lg:py-20">
-          <h2 className="max-w-[320px] font-mono text-3xl font-light leading-[1.05] tracking-tighter lg:text-6xl">
-            {footer.ctaTitleLines.map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
-            ))}
-          </h2>
-
-          <Link
-            href={footer.ctaHref}
-            className="link-hover flex w-full cursor-link items-center gap-4 text-lg font-light tracking-[0.03em] md:w-max md:gap-6 md:text-2xl"
+    <footer className="relative z-10 w-full cursor-force-white overflow-x-hidden bg-black/50 font-dmsans text-white">
+        <div className="relative z-10 border-b border-white/30">
+          <div
+            className={cn(
+              "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto",
+              "flex flex-col gap-10 p-10 px-4 pb-12 md:flex-row",
+              "items-end justify-between lg:px-20 xl:px-4"
+            )}
           >
-            {footer.ctaLink}
-            <CircleArrowIcon />
-          </Link>
-        </div>
-      </div>
+            <p
+              className={cn(
+                "!font-dm w-full text-start font-light",
+                "text-3xl md:max-w-[300px] lg:text-6xl lg:tracking-tighter"
+              )}
+            >
+              {footer.ctaTitle}
+            </p>
 
-      <div className="relative z-10 grid border-b border-white/30 md:grid-cols-3">
-        <div className="border-b border-white/30 px-4 py-6 md:border-b-0 md:border-r md:p-10">
-          <p className="mb-2.5 font-mono text-xs uppercase tracking-widest text-white/50">
-            Social
-          </p>
-          <ul className="flex flex-wrap gap-x-10 gap-y-4">
-            {footerNav.social.map((item) => (
-              <li key={item.label} className="text-xs font-medium">
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-hover cursor-link py-2.5"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+            <Link
+              href={footer.ctaHref}
+              className={cn(
+                "flex w-full cursor-pointer items-center gap-3 font-light",
+                "text-lg leading-[120%] tracking-[0.03rem]",
+                "transition-opacity duration-300 hover:opacity-60",
+                "sm:leading-[140%] md:w-max md:gap-6 md:text-2xl"
+              )}
+            >
+              {footer.ctaLink}
+              <CircleArrowIcon />
+            </Link>
+          </div>
         </div>
 
-        <div className="border-b border-white/30 px-4 py-6 md:border-b-0 md:border-r md:p-10">
-          <p className="mb-2.5 font-mono text-xs uppercase tracking-widest text-white/50">
-            LOUD
-          </p>
-          <ul className="flex flex-wrap gap-x-10 gap-y-4">
-            {footerNav.loud.map((item) => (
-              <li key={item.label} className="text-xs font-medium">
-                <Link href={item.href} className="link-hover cursor-link py-2.5">
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div className="relative z-10">
+          <div className="grid border-b border-white/30 bg-black/30 md:grid-cols-3 lg:px-10">
+            <div className="px-4 py-6 md:pr-10 lg:p-10">
+              <p className={COL_HEADER}>SOCIAL</p>
+              <nav aria-label="Social links">
+                <ul className="flex flex-wrap justify-start gap-x-10 gap-y-4">
+                  {footerNav.social.map((item) => (
+                    <li key={item.label} className={COL_LINK_LI}>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={COL_LINK_A}
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-        <div className="px-4 py-6 md:p-10">
-          <p className="mb-2.5 font-mono text-xs uppercase tracking-widest text-white/50">
-            Contact
-          </p>
-          <ul className="flex flex-wrap gap-x-10 gap-y-4">
-            {footerNav.contact.map((item) => (
-              <li key={item.label} className="text-xs font-medium">
-                <Link href={item.href} className="link-hover cursor-link py-2.5">
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+            <div className="border-y border-white/30 px-4 py-6 md:border-x md:border-y-0 md:p-10">
+              <p className={COL_HEADER}>LOUD</p>
+              <nav aria-label="LOUD navigation">
+                <ul className="flex flex-wrap justify-start gap-x-10 gap-y-4">
+                  {footerNav.loud.map((item) => (
+                    <li key={item.label} className={COL_LINK_LI}>
+                      <Link href={item.href} className={COL_LINK_A}>
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-      <div className="relative z-10 flex flex-col gap-4 px-4 py-6 text-xs md:flex-row md:items-center md:justify-between lg:px-20">
-        <p className="flex-1 text-start">{footer.copyright}</p>
-        <p className="flex-1 text-start leading-relaxed text-white/90 md:text-center">
-          {footer.legal}
-        </p>
-        <p className="flex-1 text-start md:text-end">{footer.tagline}</p>
-      </div>
+            <div className="px-4 py-6 md:pl-10 lg:p-10">
+              <p className={COL_HEADER}>CONTACT</p>
+              <nav aria-label="Contact links">
+                <ul className="flex flex-wrap justify-start gap-x-10 gap-y-4">
+                  {footerNav.contact.map((item) => (
+                    <li key={item.label} className={COL_LINK_LI}>
+                      <Link href={item.href} className={COL_LINK_A}>
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div
+            className={cn(
+              "flex flex-col gap-4 bg-black/30 p-4 py-6 text-xs",
+              "md:flex-row md:pb-12 md:pt-4 lg:px-20"
+            )}
+          >
+            <p className="flex-1 text-start">{footer.copyright}</p>
+            <p className="flex-1 text-start md:text-center">{footer.legal}</p>
+            <p className="flex-1 text-start md:text-end">{footer.tagline}</p>
+          </div>
+        </div>
     </footer>
   );
 }

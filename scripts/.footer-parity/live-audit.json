@@ -1,0 +1,1962 @@
+{
+  "1440x900": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 1440,
+      "h": 604,
+      "top": 296
+    },
+    "footerH": 604,
+    "footerTop": 296,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px 144px",
+      "gap": "40px",
+      "w": 1152,
+      "h": 400,
+      "top": 296
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "60px",
+      "fontWeight": "300",
+      "lineHeight": "60px",
+      "letterSpacing": "-3px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 300,
+      "h": 240,
+      "top": 408
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "24px",
+      "fontWeight": "300",
+      "lineHeight": "33.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "24px",
+      "w": 217,
+      "h": 34,
+      "top": 614
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px 40px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 1440,
+      "h": 123,
+      "top": 697
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 373,
+          "h": 16,
+          "top": 737
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 453,
+          "h": 122,
+          "top": 697
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 371,
+          "h": 16,
+          "top": 737
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 453,
+          "h": 122,
+          "top": 697
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 373,
+          "h": 16,
+          "top": 737
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 453,
+          "h": 122,
+          "top": 697
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px 144px",
+      "gap": "40px",
+      "w": 1152,
+      "h": 400,
+      "top": 296
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "60px",
+        "fontWeight": "300",
+        "lineHeight": "60px",
+        "letterSpacing": "-3px",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 300,
+        "h": 240,
+        "top": 408
+      }
+    ]
+  },
+  "1280x900": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 1280,
+      "h": 636,
+      "top": 264
+    },
+    "footerH": 636,
+    "footerTop": 264,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px 64px",
+      "gap": "40px",
+      "w": 1152,
+      "h": 400,
+      "top": 264
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "60px",
+      "fontWeight": "300",
+      "lineHeight": "60px",
+      "letterSpacing": "-3px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 300,
+      "h": 240,
+      "top": 376
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "24px",
+      "fontWeight": "300",
+      "lineHeight": "33.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "24px",
+      "w": 217,
+      "h": 34,
+      "top": 582
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px 40px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 1280,
+      "h": 155,
+      "top": 665
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 320,
+          "h": 16,
+          "top": 705
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 400,
+          "h": 154,
+          "top": 665
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 318,
+          "h": 16,
+          "top": 705
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 400,
+          "h": 154,
+          "top": 665
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 320,
+          "h": 16,
+          "top": 705
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 400,
+          "h": 154,
+          "top": 665
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px 64px",
+      "gap": "40px",
+      "w": 1152,
+      "h": 400,
+      "top": 264
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "60px",
+        "fontWeight": "300",
+        "lineHeight": "60px",
+        "letterSpacing": "-3px",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 300,
+        "h": 240,
+        "top": 376
+      }
+    ]
+  },
+  "768x1024": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 768,
+      "h": 484,
+      "top": 540
+    },
+    "footerH": 484,
+    "footerTop": 540,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 768,
+      "h": 200,
+      "top": 540
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "30px",
+      "fontWeight": "300",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 300,
+      "h": 108,
+      "top": 584
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "24px",
+      "fontWeight": "300",
+      "lineHeight": "33.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "24px",
+      "w": 217,
+      "h": 34,
+      "top": 658
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 768,
+      "h": 187,
+      "top": 741
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 200,
+          "h": 16,
+          "top": 765
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 40px 24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 256,
+          "h": 186,
+          "top": 741
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 174,
+          "h": 16,
+          "top": 781
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 256,
+          "h": 186,
+          "top": 741
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 200,
+          "h": 16,
+          "top": 765
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px 24px 40px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 256,
+          "h": 186,
+          "top": 741
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 768,
+      "h": 200,
+      "top": 540
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "30px",
+        "fontWeight": "300",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 300,
+        "h": 108,
+        "top": 584
+      }
+    ]
+  },
+  "430x932": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 430,
+      "h": 634,
+      "top": 298
+    },
+    "footerH": 634,
+    "footerTop": 298,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 430,
+      "h": 232,
+      "top": 298
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "30px",
+      "fontWeight": "300",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 398,
+      "h": 72,
+      "top": 338
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "18px",
+      "fontWeight": "300",
+      "lineHeight": "21.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "12px",
+      "w": 398,
+      "h": 32,
+      "top": 450
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 430,
+      "h": 273,
+      "top": 531
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 398,
+          "h": 16,
+          "top": 555
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 430,
+          "h": 90,
+          "top": 531
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 398,
+          "h": 16,
+          "top": 646
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 430,
+          "h": 92,
+          "top": 621
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 398,
+          "h": 16,
+          "top": 737
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 430,
+          "h": 90,
+          "top": 713
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 430,
+      "h": 232,
+      "top": 298
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "30px",
+        "fontWeight": "300",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 398,
+        "h": 72,
+        "top": 338
+      }
+    ]
+  },
+  "390x844": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 390,
+      "h": 666,
+      "top": 178
+    },
+    "footerH": 666,
+    "footerTop": 178,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 390,
+      "h": 232,
+      "top": 178
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "30px",
+      "fontWeight": "300",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 358,
+      "h": 72,
+      "top": 218
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "18px",
+      "fontWeight": "300",
+      "lineHeight": "21.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "12px",
+      "w": 358,
+      "h": 32,
+      "top": 330
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 390,
+      "h": 305,
+      "top": 411
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 358,
+          "h": 16,
+          "top": 435
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 390,
+          "h": 90,
+          "top": 411
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 358,
+          "h": 16,
+          "top": 526
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 390,
+          "h": 124,
+          "top": 501
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 358,
+          "h": 16,
+          "top": 649
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 390,
+          "h": 90,
+          "top": 625
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 390,
+      "h": 232,
+      "top": 178
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "30px",
+        "fontWeight": "300",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 358,
+        "h": 72,
+        "top": 218
+      }
+    ]
+  },
+  "375x812": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 375,
+      "h": 682,
+      "top": 130
+    },
+    "footerH": 682,
+    "footerTop": 130,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 375,
+      "h": 232,
+      "top": 130
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "30px",
+      "fontWeight": "300",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 343,
+      "h": 72,
+      "top": 170
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "18px",
+      "fontWeight": "300",
+      "lineHeight": "21.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "12px",
+      "w": 343,
+      "h": 32,
+      "top": 282
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 375,
+      "h": 305,
+      "top": 363
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 343,
+          "h": 16,
+          "top": 387
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 375,
+          "h": 90,
+          "top": 363
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 343,
+          "h": 16,
+          "top": 478
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 375,
+          "h": 124,
+          "top": 453
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 343,
+          "h": 16,
+          "top": 601
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 375,
+          "h": 90,
+          "top": 577
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 375,
+      "h": 232,
+      "top": 130
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "30px",
+        "fontWeight": "300",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 343,
+        "h": 72,
+        "top": 170
+      }
+    ]
+  },
+  "320x568": {
+    "footer": {
+      "class": "relative bg-black/50 cursor-force-white ",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 320,
+      "h": 718,
+      "top": -150
+    },
+    "footerH": 718,
+    "footerTop": -150,
+    "ctaContainer": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 320,
+      "h": 268,
+      "top": -150
+    },
+    "ctaText": {
+      "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+      "font": "\"DM Mono\", monospace",
+      "fontSize": "30px",
+      "fontWeight": "300",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 288,
+      "h": 108,
+      "top": -110
+    },
+    "ctaLink": {
+      "class": "font-light text-lg md:text-2xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] flex gap-3 md:gap-6 items-center cursor-pointer w-full md:w-max",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "18px",
+      "fontWeight": "300",
+      "lineHeight": "21.6px",
+      "letterSpacing": "0.48px",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "12px",
+      "w": 288,
+      "h": 32,
+      "top": 38
+    },
+    "ctaTextContent": "Let’s build something great...",
+    "grid": {
+      "class": "grid md:grid-cols-3 border-b border-white/30 lg:px-10 bg-black/30",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "w": 320,
+      "h": 305,
+      "top": 119
+    },
+    "columns": [
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 288,
+          "h": 16,
+          "top": 143
+        },
+        "col": {
+          "class": "px-4 py-6 md:pr-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 320,
+          "h": 90,
+          "top": 119
+        },
+        "links": [
+          {
+            "text": "Linkedin",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Instagram",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 288,
+          "h": 16,
+          "top": 234
+        },
+        "col": {
+          "class": "px-4 py-6 md:p-10 border-y md:border-y-0 md:border-x border-white/30",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 320,
+          "h": 124,
+          "top": 209
+        },
+        "links": [
+          {
+            "text": "Think",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Design",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Develop",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Manifesto",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Studio",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      },
+      {
+        "header": {
+          "class": "!font-mono text-xs text-white/50 mb-2.5",
+          "font": "\"DM Mono\", monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+          "padding": "0px",
+          "margin": "0px 0px 10px",
+          "gap": "normal",
+          "w": 288,
+          "h": 16,
+          "top": 357
+        },
+        "col": {
+          "class": "px-4 py-6 md:pl-10 lg:p-10",
+          "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "32px",
+          "letterSpacing": "normal",
+          "opacity": "1",
+          "color": "rgb(255, 255, 255)",
+          "padding": "24px 16px",
+          "margin": "0px",
+          "gap": "normal",
+          "w": 320,
+          "h": 90,
+          "top": 333
+        },
+        "links": [
+          {
+            "text": "Careers",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Contact Us",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          },
+          {
+            "text": "Start a company",
+            "class": "py-2.5",
+            "li": "font-medium text-xs cursor-link"
+          }
+        ]
+      }
+    ],
+    "bottomRow": {
+      "class": "md:min-h-[200px] lg:min-h-[400px] xl:max-w-6xl xl:mx-auto p-10 px-4 lg:px-20 xl:px-4 flex flex-col md:flex-row gap-10 justify-between items-end pb-12",
+      "font": "\"DM Sans\", ui-sans-serif, \"system-ui\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "opacity": "1",
+      "color": "rgb(255, 255, 255)",
+      "padding": "40px 16px 48px",
+      "margin": "0px",
+      "gap": "40px",
+      "w": 320,
+      "h": 268,
+      "top": -150
+    },
+    "bottomTexts": [
+      {
+        "text": "Let’s build something great...",
+        "class": "!font-mono font-light text-3xl lg:text-6xl w-full text-start md:max-w-[300px] lg:tracking-tighter",
+        "font": "\"DM Mono\", monospace",
+        "fontSize": "30px",
+        "fontWeight": "300",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "w": 288,
+        "h": 108,
+        "top": -110
+      }
+    ]
+  }
+}

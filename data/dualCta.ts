@@ -8,5 +8,8 @@ export const dualCtaCopy = {
   manifestoAgencyTitle: "Want to rethink your entire company?",
   studioTitle: "Want to start a company with us?",
   studioHoverText:
-    "Do you have a business idea? Are you an expert in the real estate market? But do you lack a team of technology enthusiasts? We are here for that.",
+    "Do you have a business idea? Are you an expert in a specific market? But do you lack a team of technology enthusiasts? We are here for that.",
+  agencyHint: "POINT YOUR FINGER TO DISCOVER HOW TO DO THAT",
+  studioHint: "POINT YOUR FINGER TO DISCOVER HOW TO DO THAT",
+  submitLabel: "Submit your idea",
 } as const;

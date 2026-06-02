@@ -101,7 +101,7 @@ export default function HomePage() {
         }}
         onClickLogo={() => setHoverMenuIndex(null)}
       />
-      <main>
+      <main id="main-content">
         <section
           ref={heroGestureTargetRef}
           className="relative h-screen min-h-[100svh] overflow-hidden"
@@ -126,10 +126,10 @@ export default function HomePage() {
             </div>
           ))}
 
-          <div className="pointer-events-none relative z-10 flex h-full flex-col">
+          <div className="pointer-events-none relative z-10 flex h-full w-full max-w-[100vw] flex-col overflow-hidden">
             <div
               className={cn(
-                "flex flex-1 flex-col items-center justify-center px-6 text-center transition-colors duration-700 ease-out",
+                "flex w-full min-w-0 flex-1 flex-col items-center justify-center px-4 text-center transition-colors duration-700 ease-out sm:px-6",
                 isWhiteHero ? "text-black" : "text-white"
               )}
             >
@@ -162,7 +162,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute left-0 top-0 flex h-dvh w-full items-end justify-between gap-4 px-4 pb-10 lg:px-10">
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 flex w-full max-w-[100vw] items-end justify-between gap-2 px-4 pb-7 max-[360px]:pb-6 sm:gap-4 sm:px-6 sm:pb-10 lg:px-10">
             <HomeIndustryLinks
               hoveredIndustryIndex={hoveredIndustryIndex}
               setHoveredIndustryIndex={setHoveredIndustryIndex}
@@ -184,7 +184,7 @@ export default function HomePage() {
             <ClickRippleLink
               href="/contact-us"
               className={cn(
-                "pointer-events-auto rounded-full border px-5 py-2.5 text-[10px] uppercase tracking-[0.18em] transition md:px-6 md:text-[11px]",
+                "pointer-events-auto shrink-0 rounded-full border px-4 py-2 text-[9px] uppercase tracking-[0.14em] transition sm:px-5 sm:text-[10px] sm:tracking-[0.16em] md:px-6 md:py-2.5 md:text-[11px] md:tracking-[0.18em]",
                 isWhiteHero
                   ? "border-black/25 text-black/90 hover:border-black/50 hover:bg-black/5"
                   : "border-white/25 text-white/90 hover:border-white/50 hover:bg-white/5"
@@ -211,11 +211,11 @@ export default function HomePage() {
         <Marquee items={industryMarqueeItems} />
         <Marquee items={industryMarqueeItems} reverse />
 
-        <section className="page-padding pb-12 pt-16">
+        <section className="page-padding pb-10 pt-14 md:pb-12 md:pt-16">
           <p className="section-label">I•VI PILLARS</p>
         </section>
 
-        <section className="page-padding grid gap-8 pb-20 md:grid-cols-2 md:gap-12 md:pb-28">
+        <section className="page-padding grid gap-6 pb-16 sm:gap-8 md:grid-cols-2 md:gap-12 md:pb-28">
           {industries.map((industry, i) => (
             <ScrollReveal key={industry.slug}>
               <IndustryCard {...industry} index={i} />

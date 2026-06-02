@@ -52,7 +52,7 @@ export default function ManifestoPrinciplesHover({
               >
                 <span
                   className={cn(
-                    "pointer-events-none block max-w-full origin-center text-center text-2xl leading-tight transition-all duration-500 ease-out will-change-[transform,filter] md:text-4xl lg:text-5xl",
+                    "pointer-events-none block max-w-full origin-center px-2 text-center text-xl leading-tight transition-all duration-500 ease-out will-change-[transform,filter] sm:text-2xl md:text-4xl lg:text-5xl",
                     isHovered
                       ? "scale-[1.35] blur-xl opacity-100"
                       : "scale-100 blur-0 opacity-100"
@@ -63,7 +63,7 @@ export default function ManifestoPrinciplesHover({
 
                 <span
                   className={cn(
-                    "absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center whitespace-nowrap font-mono text-xs uppercase tracking-widest transition-all duration-500 ease-out",
+                    "absolute left-1/2 top-1/2 flex max-w-[min(100vw-2rem,20rem)] -translate-x-1/2 -translate-y-1/2 flex-wrap items-center justify-center text-center font-mono text-[10px] uppercase tracking-widest transition-all duration-500 ease-out sm:max-w-none sm:whitespace-nowrap sm:text-xs",
                     isHovered
                       ? "scale-100 opacity-100 blur-0"
                       : "pointer-events-none scale-95 opacity-0 blur-sm"
@@ -82,7 +82,7 @@ export default function ManifestoPrinciplesHover({
             href="/contact-us"
             className="group inline-flex cursor-link cursor-none cursor-invert items-center gap-3 font-mono text-sm uppercase tracking-widest text-black/60 transition-colors duration-300 hover:text-black"
           >
-            Build with us
+            Build with Us
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#8b6cff] text-white transition-transform duration-300 ease-out group-hover:translate-x-1">
               <svg
                 width={14}

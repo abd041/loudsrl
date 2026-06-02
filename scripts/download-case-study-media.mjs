@@ -3,6 +3,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const MEDIA_DIR = path.join(ROOT, "public/media");
+const LOGOS_DIR = path.join(ROOT, "public/logos");
 const LIST = path.join(ROOT, "scripts/case-studies-media.txt");
 
 const EXTRA = [
@@ -10,6 +11,17 @@ const EXTRA = [
   "album-1.png",
   "arrow_outward.png",
   "Union-1.png",
+  "think-hero.webp",
+  "design-hero.webp",
+  "develop-hero.webp",
+  "loud-agency-background.jpg",
+  "loud-studio-background.png",
+  "cover-ai-loud.jpg",
+  "loud-cover-ecommerce.png",
+  "mobile-apps.jpg",
+  "real-estate-industry.jpg",
+  "logo-white.png",
+  "logo-black.png",
 ];
 
 const files = [
@@ -20,7 +32,11 @@ const files = [
 ];
 
 async function download(filename) {
-  const dest = path.join(MEDIA_DIR, filename);
+  const isHeaderLogo = filename === "logo-white.png" || filename === "logo-black.png";
+  const dest = isHeaderLogo
+    ? path.join(LOGOS_DIR, filename)
+    : path.join(MEDIA_DIR, filename);
+
   if (fs.existsSync(dest)) {
     return "skip";
   }

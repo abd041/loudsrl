@@ -34,7 +34,7 @@ export default function IndustryPageClient({
   return (
     <>
       <Header transparent scrollWithPage={false} />
-      <main className="cursor-force-white bg-black text-white">
+      <main id="main-content" className="cursor-force-white bg-black text-white">
         <IndustryHeroBanner industry={industry} />
 
         <IndustryIntro industry={industry} />

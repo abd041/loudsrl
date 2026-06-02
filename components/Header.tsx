@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { mainNav } from "@/data/navigation";
 import {
   findNavIndexFromPath,
@@ -12,6 +13,7 @@ import {
 } from "@/lib/routeNav";
 import { cn } from "@/lib/cn";
 import { markPendingBackToast } from "@/lib/backNavigation";
+import { useBodyScrollLock } from "@/lib/useBodyScrollLock";
 import { useAppStore } from "@/store/appStore";
 import FullscreenMenu from "./FullscreenMenu";
 import LiveClock from "./LiveClock";
@@ -47,6 +49,7 @@ export default function Header({
   const isHome = isHomeProp ?? pathname === "/";
   const scrollWithPage = scrollWithPageProp ?? !isHome;
   const isInsidePillar = isInsidePillarProp ?? isPillarPath(pathname);
+  const compactNav = !isHome;
 
   const { setIndex, setIsWhite } = useAppStore();
 
@@ -85,12 +88,7 @@ export default function Header({
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [menuOpen]);
+  useBodyScrollLock(menuOpen);
 
   useEffect(() => {
     if (hoverTimeout.current !== null) {
@@ -131,6 +129,7 @@ export default function Header({
     scrolled && transparent && headerIsWhite && !isHome && !scrollWithPage;
   const textColor = headerIsWhite ? "text-black" : "text-white";
   const usesExternalHover = externalHoverMenuIndex !== undefined;
+  const showBackComputed = showBack || compactNav;
 
   const handleMouseEnter = (index: number) => {
     if (hoverTimeout.current !== null) {
@@ -209,7 +208,7 @@ export default function Header({
           "z-50 transition-all duration-500",
           scrollWithPage
             ? "relative"
-            : "fixed top-0 left-0 right-0",
+            : "fixed left-0 right-0 top-0 pt-[env(safe-area-inset-top,0px)]",
           showSolidBg
             ? "border-b border-white/10 bg-[#050505]/80 backdrop-blur-md"
             : showWhiteScrolledBg
@@ -218,62 +217,100 @@ export default function Header({
         )}
       >
         <div className="page-padding flex h-[72px] items-center justify-between md:h-[88px] lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center">
-          {showBack ? (
-            <Link
-              ref={backRef}
-              href="/"
-              onClick={(event) => {
-                event.preventDefault();
-                markPendingBackToast();
-                router.back();
-              }}
-              className="flex cursor-pointer items-center gap-2 text-xs tracking-[0.03rem] hover:opacity-80"
-            >
-              <span className="rotate-180">
-                <AnimatedCircleArrow
-                  triggerRef={backRef}
-                  strokeClass={headerIsWhite ? "stroke-black" : "stroke-white"}
-                  size={32}
-                />
-              </span>
-              <span className={cn("opacity-60", textColor)}>
-                Digital Product Company.
-              </span>
-            </Link>
-          ) : (
-            <Link
-              href="/"
-              onClick={() => {
-                onClickLogo?.();
-              }}
-              className="group flex cursor-link cursor-none items-center gap-2 hover:opacity-80"
-            >
-              <Image
-                src={
-                  headerIsWhite
-                    ? "/logos/logo-black.png"
-                    : "/logos/logo-white.png"
-                }
-                alt="LOUD"
-                width={25}
-                height={25}
-                priority
-                className="shrink-0"
-              />
-              <span className="flex flex-wrap gap-x-2 text-xs tracking-[0.03rem]">
-                {isHome ? (
-                  <span className={cn("font-black", textColor)}>LOUD.</span>
-                ) : null}
-                <span className={cn("opacity-60", textColor)}>
+          <motion.div
+            layout
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className={cn(
+              "flex min-w-0 items-center",
+              compactNav &&
+                !scrollWithPage &&
+                "rounded-full border border-white/10 bg-[#050505]/40 px-2.5 py-2 backdrop-blur-md"
+            )}
+          >
+            {showBackComputed ? (
+              <Link
+                ref={backRef}
+                href="/"
+                onClick={(event) => {
+                  event.preventDefault();
+                  markPendingBackToast();
+                  router.back();
+                }}
+                className="flex min-w-0 cursor-pointer items-center gap-2 text-xs tracking-[0.03rem] hover:opacity-80"
+              >
+                <motion.span
+                  layout
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  className="rotate-180"
+                >
+                  <AnimatedCircleArrow
+                    triggerRef={backRef}
+                    strokeClass={headerIsWhite ? "stroke-black" : "stroke-white"}
+                    size={32}
+                  />
+                </motion.span>
+                <motion.span
+                  layout
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  className={cn("min-w-0 truncate opacity-60", textColor)}
+                >
                   Digital Product Company.
-                </span>
-              </span>
-            </Link>
-          )}
+                </motion.span>
+              </Link>
+            ) : (
+              <Link
+                href="/"
+                onClick={() => {
+                  onClickLogo?.();
+                }}
+                className="group flex min-w-0 max-w-[calc(100vw-3.25rem)] cursor-link cursor-none items-center gap-2 hover:opacity-80"
+              >
+                <motion.div
+                  layout
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  className="shrink-0"
+                >
+                  <Image
+                    src={
+                      headerIsWhite
+                        ? "/logos/logo-black.png"
+                        : "/logos/logo-white.png"
+                    }
+                    alt="LOUD"
+                    width={25}
+                    height={25}
+                    priority
+                    className="shrink-0"
+                  />
+                </motion.div>
+                <motion.span
+                  layout
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  className="flex min-w-0 flex-wrap items-baseline gap-x-1.5 text-[11px] tracking-[0.03rem] sm:gap-x-2 sm:text-xs"
+                >
+                  {isHome ? (
+                    <span className={cn("shrink-0 font-black", textColor)}>LOUD.</span>
+                  ) : null}
+                  <span
+                    className={cn(
+                      "hidden opacity-60 min-[341px]:inline",
+                      textColor
+                    )}
+                  >
+                    Digital Product Company.
+                  </span>
+                </motion.span>
+              </Link>
+            )}
+          </motion.div>
 
           <nav className="hidden items-center justify-center lg:flex">
             {mainNav.map((item, index) => {
-              const isActive = hoverMenuIndex === index;
+              const isActive = compactNav
+                ? visitingIndex === index
+                : hoverMenuIndex === index;
+              const dimInactive =
+                !compactNav && hoverMenuIndex !== null && hoverMenuIndex !== index;
               return (
                 <Link
                   key={item.href}
@@ -286,11 +323,9 @@ export default function Header({
                     usesExternalHover
                       ? "cursor-link cursor-none"
                       : "cursor-pointer",
-                    "text-sm font-medium transition-all duration-400 px-6 py-4",
+                    "text-sm font-medium transition-all duration-[400ms] px-6 py-4",
                     isActive && "opacity-100",
-                    hoverMenuIndex !== null &&
-                      hoverMenuIndex !== index &&
-                      "blur-[3px] opacity-50"
+                    dimInactive && "blur-[2px] opacity-40"
                   )}
                 >
                   {item.label}
@@ -300,14 +335,15 @@ export default function Header({
           </nav>
 
           <div className="flex items-center justify-end gap-4 lg:justify-self-end">
-            <div className="hidden shrink-0 lg:block">
+            <div className="hidden shrink-0 md:block">
               <LiveClock isWhiteBg={headerIsWhite} />
             </div>
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              className="flex cursor-pointer flex-col gap-1.5 lg:hidden"
+              className="flex min-h-11 min-w-11 cursor-pointer flex-col items-center justify-center gap-1.5 lg:hidden"
               aria-label="Open menu"
+              aria-expanded={menuOpen}
             >
               <span
                 className={cn("block h-px w-6", headerIsWhite ? "bg-black" : "bg-white")}

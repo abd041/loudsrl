@@ -17,9 +17,20 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Helvetica Neue", "Arial", "sans-serif"],
+        mono: ["var(--font-space-mono)", "Courier New", "monospace"],
+        dm: ["var(--font-dm-mono)", "Courier New", "monospace"],
+        dmsans: [
+          "var(--font-dm-sans)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       transitionDuration: {
         400: "400ms",
+      },
+      minHeight: {
+        22: "5.5rem",
       },
     },
   },

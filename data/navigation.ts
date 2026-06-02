@@ -16,7 +16,7 @@ export const footerNav = {
   ],
   contact: [
     { label: "Careers", href: "/contact-us?c=career" },
-    { label: "Contact Us", href: "/contact-us" },
+    { label: "Contact Us", href: "/contact-us?c=business" },
     { label: "Start a company", href: "/contact-us?c=startup" },
   ],
   social: [

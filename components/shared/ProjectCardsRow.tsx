@@ -26,6 +26,8 @@ export type ProjectCardsRowProps = {
   embedded?: boolean;
   /** Studio live products show title in mono, subtitle below. */
   labelMode?: "default" | "studio";
+  /** Studio/contact featured row — matches live DOM classes and layout */
+  parityVariant?: "default" | "studio-live" | "contact-live";
   theme?: "light" | "dark";
 };
 
@@ -56,8 +58,12 @@ export default function ProjectCardsRow({
   projects,
   embedded = false,
   labelMode = "default",
+  parityVariant = "default",
   theme = "light",
 }: ProjectCardsRowProps) {
+  const isStudioLive =
+    parityVariant === "studio-live" || parityVariant === "contact-live";
+  const isContactLive = parityVariant === "contact-live";
   const isDark = theme === "dark";
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -195,8 +201,16 @@ export default function ProjectCardsRow({
     >
       <div
         className={cn(
-          "mx-auto max-w-6xl overflow-hidden px-4 lg:px-10",
-          embedded ? "pb-4 pt-0" : "py-16 lg:py-24"
+          "overflow-hidden",
+          !isContactLive && "mx-auto max-w-6xl",
+          isContactLive
+            ? "w-full px-4 py-12 lg:px-10 lg:py-16"
+            : isStudioLive
+              ? "mx-auto max-w-6xl px-4 py-10 lg:py-20"
+              : cn(
+                  "mx-auto max-w-6xl px-4 lg:px-10",
+                  embedded ? "pb-4 pt-0" : "py-16 lg:py-24"
+                )
         )}
       >
         <div
@@ -204,7 +218,14 @@ export default function ProjectCardsRow({
           className={
             isDesktop
               ? "flex w-full flex-nowrap overflow-visible"
-              : "grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3"
+              : isStudioLive
+                ? "grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3"
+                : cn(
+                    "grid grid-cols-1 gap-8",
+                    labelMode === "studio" && count <= 2
+                      ? "sm:grid-cols-2 sm:gap-10"
+                      : "gap-10 sm:grid-cols-2 md:grid-cols-3"
+                  )
           }
           style={isDesktop ? { gap: `${GAP}px` } : undefined}
         >
@@ -230,8 +251,11 @@ export default function ProjectCardsRow({
                     {project.previewImage ? (
                       <Image
                         className={cn(
-                          "h-[450px] w-full object-cover transition-all duration-300",
-                          isDark ? "cursor-force-white" : "cursor-force-white"
+                          "w-full object-cover transition-all duration-300",
+                          isStudioLive
+                            ? "h-[450px] cursor-force-white"
+                            : "h-[280px] sm:h-[360px] lg:h-[450px]",
+                          !isStudioLive && "cursor-force-white"
                         )}
                         src={project.previewImage.url}
                         alt={project.previewImage.alt?.trim() ?? ""}
@@ -241,13 +265,34 @@ export default function ProjectCardsRow({
                     ) : null}
                   </div>
 
-                  <p className="!font-mono mb-1 mt-6 text-sm font-medium opacity-60">
+                  <p
+                    className={cn(
+                      isStudioLive
+                        ? "!font-mono mb-1 mt-6 text-sm font-medium opacity-60"
+                        : cn(
+                            "!font-mono mb-1 mt-6 text-sm font-medium opacity-60",
+                            labelMode === "studio" &&
+                              "uppercase tracking-[0.03rem]"
+                          )
+                    )}
+                  >
                     {labelMode === "studio"
-                      ? project.previewDescription
+                      ? isStudioLive
+                        ? project.previewDescription.toUpperCase()
+                        : project.previewDescription
                       : project.name}
                   </p>
 
-                  <p className="text-sm">
+                  <p
+                    className={cn(
+                      isStudioLive
+                        ? "text-sm"
+                        : cn(
+                            "text-sm tracking-[0.03rem] leading-[140%]",
+                            labelMode === "studio" && "max-w-md"
+                          )
+                    )}
+                  >
                     {labelMode === "studio"
                       ? project.name
                       : project.previewDescription}

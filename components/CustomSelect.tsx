@@ -7,6 +7,9 @@ type CustomSelectProps = {
   options: string[];
   required?: boolean;
   placeholder?: string;
+  value?: string;
+  onChange?: (value: string) => void;
+  theme?: "dark" | "light";
 };
 
 export default function CustomSelect({
@@ -14,26 +17,43 @@ export default function CustomSelect({
   options,
   required,
   placeholder = "Select...",
+  value = "",
+  onChange,
+  theme = "dark",
 }: CustomSelectProps) {
+  const isLight = theme === "light";
+
   return (
     <label className="block">
-      <span className="section-label mb-2 block">
+      <span
+        className={cn(
+          "section-label mb-2 block",
+          isLight && "text-black/50"
+        )}
+      >
         {label}
         {required && "*"}
       </span>
       <select
         required={required}
+        value={value}
+        onChange={(event) => onChange?.(event.target.value)}
         className={cn(
-          "w-full border border-white/15 bg-transparent px-4 py-3 text-sm",
-          "focus:border-white/40 focus:outline-none"
+          "w-full border bg-transparent px-4 py-3 text-sm focus:outline-none",
+          isLight
+            ? "border-black/15 text-black focus:border-black/40"
+            : "border-white/15 focus:border-white/40"
         )}
-        defaultValue=""
       >
         <option value="" disabled>
           {placeholder}
         </option>
         {options.map((opt) => (
-          <option key={opt} value={opt} className="bg-[#101010]">
+          <option
+            key={opt}
+            value={opt}
+            className={isLight ? "bg-white text-black" : "bg-[#101010]"}
+          >
             {opt}
           </option>
         ))}

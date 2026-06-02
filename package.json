@@ -5,12 +5,28 @@
   "scripts": {
     "dev": "next dev",
     "dev:clean": "node scripts/dev-clean.mjs",
-    "clean": "rm -rf .next",
+    "clean": "node scripts/clean-next.mjs",
     "prebuild": "node scripts/check-dev-not-running.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "test:visual": "playwright test"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "ci": "npm run lint && npm run typecheck && npm run build",
+    "test:visual": "playwright test tests/screenshots.spec.ts",
+    "test:parity:capture": "playwright test tests/parity-against-live.spec.ts --config=playwright.parity-capture.config.ts --update-snapshots",
+    "test:smoke": "playwright test tests/release-smoke.spec.ts",
+    "test:ci": "playwright test tests/release-smoke.spec.ts tests/parity-against-live.spec.ts",
+    "test:parity": "npm run build && playwright test tests/parity-against-live.spec.ts tests/parity-menu.spec.ts",
+    "test:footer-parity:capture": "playwright test tests/footer-parity.spec.ts --config=playwright.footer-parity.config.ts --update-snapshots",
+    "test:footer-parity": "npm run build && playwright test tests/footer-parity.spec.ts --config=playwright.footer-parity-local.config.ts",
+    "lighthouse": "node scripts/run-lighthouse.mjs",
+    "lighthouse:ci": "node scripts/lighthouse-ci.mjs",
+    "analyze": "node scripts/run-analyze.mjs",
+    "build:parity": "npm run build && npm run test:parity",
+    "media:sync": "node scripts/download-case-study-media.mjs && node scripts/sync-remaining-media.mjs && node scripts/sync-header-logos.mjs && node scripts/sync-client-logos.mjs && node scripts/sync-studio-media.mjs",
+    "studio:sync": "node scripts/sync-studio-media.mjs",
+    "logos:sync": "node scripts/sync-header-logos.mjs && node scripts/sync-client-logos.mjs",
+    "logos:sync:clients": "node scripts/sync-client-logos.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -24,7 +40,10 @@
     "three": "^0.184.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.28",
     "@playwright/test": "^1.60.0",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "@types/node": "^20",
     "@types/react": "^18.3.29",
     "@types/react-dom": "^18.3.7",
@@ -33,7 +52,10 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.28",
     "postcss": "^8.5.15",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.19",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wait-on": "^8.0.3",
+    "web-vitals": "^4.2.4"
   }
 }

@@ -1,0 +1,113 @@
+{
+  "business": {
+    "featured": [],
+    "activeTab": "Evolve my Business",
+    "eyebrow": "!font-mono text-xs leading-[115%] sm:leading-[135%] opacity-50 mb-6 md:mb-2 px-4 lg:px-0",
+    "formClass": "grid grid-cols-2 lg:grid-cols-3 border-t border-l border-[#d9d9d9] mt-9 overflow-hidden",
+    "cellClass": "relative border-r border-b border-[#d9d9d9] min-h-[170px] p-4 lg:p-10",
+    "submitClass": "w-full col-span-2 lg:col-span-3 relative overflow-hidden min-h-22",
+    "submitBg": "rgb(78, 113, 255)",
+    "placeholders": {
+      "project": "Full Project, Future Improvements, Maintenance",
+      "industry": "Real Estate, E-commerce, Music",
+      "email": "Type here your email"
+    },
+    "steps": {
+      "sectionClass": "pb-24 pt-10 md:pt-24 flex flex-col sm:flex-row gap-20 max-w-6xl mx-auto px-4",
+      "videoAspect": "relative overflow-hidden w-full h-auto cursor-force-white",
+      "h2blue": "!font-mono font-light text-4xl lg:text-6xl [word-spacing:-5px] lg:[word-spacing:-10px]",
+      "h2black": "!font-mono font-light text-4xl lg:text-6xl [word-spacing:-5px] lg:[word-spacing:-10px]",
+      "listClass": "list-number"
+    },
+    "logoSection": {
+      "wrapClass": "py-28",
+      "headingClass": "max-w-6xl mx-auto w-full px-4 text-center text-balance text-5xl leading-[115%]",
+      "gap": "flex flex-col gap-16"
+    },
+    "hateEmail": [
+      {
+        "vis": true,
+        "parent": "hidden lg:flex whitespace-nowrap shrink-0 flex-col justify-end items-end gap-1.5"
+      },
+      {
+        "vis": false,
+        "parent": "whitespace-nowrap flex-col justify-center items-center gap-1.5"
+      }
+    ]
+  },
+  "startup": {
+    "featured": [],
+    "activeTab": "Start a company",
+    "eyebrow": "!font-mono text-xs leading-[115%] sm:leading-[135%] opacity-50 mb-6 md:mb-2 px-4 lg:px-0",
+    "formClass": "grid grid-cols-2 lg:grid-cols-3 border-t border-l border-[#d9d9d9] mt-9 overflow-hidden",
+    "cellClass": "relative border-r border-b border-[#d9d9d9] min-h-[170px] p-4 lg:p-10",
+    "submitClass": "w-full col-span-2 lg:col-span-3 relative overflow-hidden min-h-22",
+    "submitBg": "rgb(78, 113, 255)",
+    "placeholders": {
+      "project": "Full Project, Future Improvements, Maintenance",
+      "industry": "Real Estate, E-commerce, Music",
+      "email": "Type here your email"
+    },
+    "steps": {
+      "sectionClass": "pb-24 pt-10 md:pt-24 flex flex-col sm:flex-row gap-20 max-w-6xl mx-auto px-4",
+      "videoAspect": "relative overflow-hidden w-full h-auto cursor-force-white",
+      "h2blue": "!font-mono font-light text-4xl lg:text-6xl [word-spacing:-5px] lg:[word-spacing:-10px]",
+      "h2black": "!font-mono font-light text-4xl lg:text-6xl [word-spacing:-5px] lg:[word-spacing:-10px]",
+      "listClass": "list-number"
+    },
+    "logoSection": {
+      "wrapClass": "py-28",
+      "headingClass": "max-w-6xl mx-auto w-full px-4 text-center text-balance text-5xl leading-[115%]",
+      "gap": "flex flex-col gap-16"
+    },
+    "hateEmail": [
+      {
+        "vis": true,
+        "parent": "hidden lg:flex whitespace-nowrap shrink-0 flex-col justify-end items-end gap-1.5"
+      },
+      {
+        "vis": false,
+        "parent": "whitespace-nowrap flex-col justify-center items-center gap-1.5"
+      }
+    ]
+  },
+  "career": {
+    "featured": [],
+    "activeTab": "Career",
+    "eyebrow": "!font-mono text-xs leading-[115%] sm:leading-[135%] opacity-50 mb-6 md:mb-2 px-4 lg:px-0",
+    "formClass": "grid grid-cols-2 lg:grid-cols-3 border-t border-l border-[#d9d9d9] mt-9 overflow-hidden",
+    "cellClass": "relative border-r border-b border-[#d9d9d9] min-h-[170px] p-4 lg:p-10",
+    "submitClass": "w-full col-span-2 lg:col-span-3 relative overflow-hidden min-h-22",
+    "submitBg": "rgb(173, 138, 236)",
+    "placeholders": {
+      "email": "Type here your email"
+    },
+    "steps": {
+      "sectionClass": "pb-24 pt-10 md:pt-24 flex flex-col sm:flex-row gap-20 max-w-6xl mx-auto px-4",
+      "videoAspect": "relative overflow-hidden w-full h-auto cursor-force-white",
+      "h2blue": "!font-mono font-light text-4xl lg:text-6xl [word-spacing:-5px] lg:[word-spacing:-10px]",
+      "h2black": "!font-mono font-light text-4xl lg:text-6xl [word-spacing:-5px] lg:[word-spacing:-10px]",
+      "listClass": "list-number"
+    },
+    "logoSection": {
+      "wrapClass": "py-28",
+      "headingClass": "max-w-6xl mx-auto w-full px-4 text-center text-balance text-5xl leading-[115%]",
+      "gap": "flex flex-col gap-16"
+    },
+    "hateEmail": [
+      {
+        "vis": true,
+        "parent": "hidden lg:flex whitespace-nowrap shrink-0 flex-col justify-end items-end gap-1.5"
+      },
+      {
+        "vis": false,
+        "parent": "whitespace-nowrap flex-col justify-center items-center gap-1.5"
+      }
+    ]
+  },
+  "mobileCareer": {
+    "formCols": "grid grid-cols-2 lg:grid-cols-3 border-t border-l border-[#d9d9d9] mt-9 overflow-hidden",
+    "tabFont": "!font-mono font-light text-2xl md:text-4xl transition-opacity duration-300 [word-spacing:-0.3125rem] lg:[word-spacing:-0",
+    "featuredCount": 3
+  }
+}

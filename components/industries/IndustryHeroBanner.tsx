@@ -192,9 +192,9 @@ export default function IndustryHeroBanner({ industry }: IndustryHeroBannerProps
                   <div key={page.slug} data-slide className="shrink-0 grow">
                     <p
                       data-slide-title
-                      className="text-gradient-industry w-max font-mono text-3xl font-light leading-[1.2] sm:text-5xl md:text-6xl"
+                      className="text-gradient-industry max-w-full font-mono text-2xl font-light leading-[1.2] sm:text-5xl md:text-6xl"
                     >
-                      <span className="flex max-w-[min(calc(100vw-76px-32px),360px)] overflow-hidden text-balance font-mono md:max-w-[min(calc(100vw-76px-32px),450px)]">
+                      <span className="block max-w-[min(calc(100vw-5rem),100%)] text-balance font-mono sm:max-w-[min(calc(100vw-76px-32px),450px)]">
                         {page.title}
                       </span>
                     </p>

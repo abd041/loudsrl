@@ -51,6 +51,7 @@ export default function CaseStudyPageClient({ slug }: CaseStudyPageClientProps) 
       </div>
 
       <main
+        id="main-content"
         ref={contentRef}
         className="min-h-screen opacity-0"
       >

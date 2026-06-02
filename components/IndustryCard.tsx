@@ -29,7 +29,7 @@ export default function IndustryCard({
         index % 2 === 1 && "lg:mt-16"
       )}
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-[5/4] overflow-hidden sm:aspect-[4/3]">
         <MediaImage
           src={image}
           alt={title}
@@ -39,7 +39,7 @@ export default function IndustryCard({
       </div>
       <div className="p-6 md:p-8">
         <p className="section-label mb-3">{tags}</p>
-        <h3 className="mb-4 text-3xl font-light tracking-tight transition-opacity group-hover:opacity-70 md:text-4xl">
+        <h3 className="mb-4 text-[1.75rem] font-light leading-tight tracking-[-0.02em] transition-opacity group-hover:opacity-70 md:text-4xl">
           {title}
         </h3>
         <p className="max-w-xl text-base leading-relaxed text-white/60">

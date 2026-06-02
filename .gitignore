@@ -38,6 +38,12 @@ next-env.d.ts
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+/docs/lighthouse/*.json
+!/docs/lighthouse/.gitkeep
+/docs/parity/last-failure-report.json
+
+# Bundle analyzer
+.next/analyze/
 
 # Vercel
 .vercel

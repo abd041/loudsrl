@@ -17,16 +17,16 @@ export type LiquidPreset = {
 export const LIQUID_PRESETS: LiquidPreset[] = [
   {
     spinRotation: 0,
-    spinSpeed: 2,
+    spinSpeed: 2.2,
     colour1: "#0d0d39",
     colour2: "#717184",
     colour3: "#000000",
     contrast: 5.5,
     lighting: 0.4,
-    spinAmount: 0.25,
+    spinAmount: 0.24,
     pixelFilter: 10000,
-    grainStrength: 0.2,
-    useGrain: false,
+    grainStrength: 0.42,
+    useGrain: true,
     effectDepth: 10,
   },
   {
@@ -119,6 +119,15 @@ export const LIQUID_PRESETS: LiquidPreset[] = [
 ];
 
 export const HOME_LIQUID_PRESET = LIQUID_PRESETS[0];
+
+/** Fixed footer backdrop — softer premium depth through bg-black/50 (live parity). */
+export const FOOTER_BACKDROP_TUNING = {
+  contrastMult: 1.1,
+  grainMult: 1.15,
+  lightingAdd: 0.06,
+  spinAmountMult: 1.05,
+  zoom: 3,
+} as const;
 
 export function clampPresetIndex(index: number): number {
   return Math.max(0, Math.min(index, LIQUID_PRESETS.length - 1));

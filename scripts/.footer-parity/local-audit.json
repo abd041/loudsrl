@@ -1,0 +1,79 @@
+{
+  "1440x900": {
+    "footerH": 636,
+    "footer": {
+      "class": "relative w-full cursor-force-white bg-black/50 text-white",
+      "font": "__Inter_f367f3, __Inter_Fallback_f367f3, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "padding": "0px",
+      "margin": "0px",
+      "w": 1440,
+      "h": 636
+    },
+    "children": [
+      {
+        "i": 0,
+        "tag": "DIV",
+        "class": "relative z-10 border-b border-white/30",
+        "h": 401
+      },
+      {
+        "i": 1,
+        "tag": "DIV",
+        "class": "relative z-10",
+        "h": 235
+      }
+    ],
+    "ctaWrapper": {
+      "class": "relative z-10 border-b border-white/30",
+      "font": "__Inter_f367f3, __Inter_Fallback_f367f3, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "padding": "0px",
+      "margin": "0px",
+      "w": 1440,
+      "h": 401
+    },
+    "ctaContainer": {
+      "class": "flex flex-col items-end justify-between gap-10 p-10 px-4 pb-12 md:min-h-[200px] md:flex-row lg:min-h-[400px] lg:px-20 xl:mx-auto xl:max-w-6xl xl:px-4",
+      "font": "__Inter_f367f3, __Inter_Fallback_f367f3, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "padding": "40px 16px 48px",
+      "margin": "0px 144px",
+      "w": 1152,
+      "h": 400
+    },
+    "ctaText": {
+      "class": "footer-dm w-full text-start font-light text-3xl lg:text-6xl lg:tracking-tighter md:max-w-[300px]",
+      "font": "__DM_Mono_d02b1f, __DM_Mono_Fallback_d02b1f, \"Courier New\", monospace",
+      "fontSize": "60px",
+      "lineHeight": "60px",
+      "padding": "0px",
+      "margin": "0px",
+      "w": 300,
+      "h": 240
+    },
+    "grid": {
+      "class": "grid border-b border-white/30 bg-black/30 md:grid-cols-3 lg:px-10",
+      "font": "__Inter_f367f3, __Inter_Fallback_f367f3, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "padding": "0px 40px",
+      "margin": "0px",
+      "w": 1440,
+      "h": 155
+    },
+    "legalRow": {
+      "class": "flex flex-col gap-4 bg-black/30 p-4 py-6 text-xs md:flex-row md:pb-12 md:pt-4 lg:px-20",
+      "font": "__Inter_f367f3, __Inter_Fallback_f367f3, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "padding": "16px 80px 48px",
+      "margin": "0px",
+      "w": 1440,
+      "h": 80
+    }
+  }
+}

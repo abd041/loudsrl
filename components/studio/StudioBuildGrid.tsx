@@ -14,12 +14,12 @@ type StudioBuildGridProps = {
 
 export default function StudioBuildGrid({ cards }: StudioBuildGridProps) {
   return (
-    <section className="relative z-20 bg-black/5 px-4 py-20 text-black lg:px-10 lg:py-28">
+    <section className="relative z-20 bg-black/5 px-4 py-16 text-black md:py-20 lg:px-10 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <p className="font-mono text-xs tracking-[0.03rem] text-black/60">
           {studioBuildSection.label}
         </p>
-        <h2 className="mt-0 text-4xl tracking-[0.03rem] leading-[120%] sm:leading-[140%]">
+        <h2 className="mt-0 max-w-3xl text-[clamp(1.75rem,5vw,2.25rem)] tracking-[0.03rem] leading-[120%] sm:leading-[140%]">
           {studioBuildSection.title}
         </h2>
 
@@ -27,7 +27,7 @@ export default function StudioBuildGrid({ cards }: StudioBuildGridProps) {
           {cards.map((card) => (
             <article
               key={card.title}
-              className="flex flex-col justify-between gap-20 bg-white px-5 py-6"
+              className="flex flex-col justify-between gap-10 bg-white px-4 py-5 transition-colors duration-300 sm:gap-16 sm:px-5 sm:py-6 md:gap-20"
             >
               <Image src={card.icon} alt="" width={72} height={72} />
 

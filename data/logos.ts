@@ -1,34 +1,10 @@
-/** White logo PNGs — for black/dark backgrounds (live CMS: logosBlackBG). */
-export const logosForDarkBackground = [
-  "white-beyond-doc.png",
-  "white-bikeroom.png",
-  "white-cercacasa.png",
-  "white-cercacasa-1.png",
-  "white-ennevolte.png",
-  "white-fimi.png",
-  "white-gonext.png",
-  "white-idntt.png",
-  "white-mae.png",
-  "white-whuis.png",
-  "white-zero.png",
-  "white-acqua-di-parma.png",
-  "white-banca-sella.png",
-  "white-bitbull.png",
-  "white-deloitte.png",
-  "white-ied.png",
-  "white-mcsaatchi.png",
-  "white-moneymour.png",
-  "white-samso.png",
-  "white-tag.png",
-  "white-vitesicure.png",
-  "white-zest.png",
-];
-
-/** Dark logo PNGs — for white/light backgrounds (live CMS: logosWhiteBG). */
+/**
+ * Client logos in public/logos/ (PNG from CMS — sync via npm run logos:sync).
+ * Light sections use black-*; dark sections use white-* (same order).
+ */
 export const logosForLightBackground = [
   "black-beyond-doc.png",
   "black-bikeroom.png",
-  "black-cercacasa.png",
   "black-cercacasa-1.png",
   "black-ennevolte.png",
   "black-fimi.png",
@@ -48,9 +24,13 @@ export const logosForLightBackground = [
   "black-tag.png",
   "black-vitesicure.png",
   "black-zest.png",
-];
+] as const;
 
-/** @deprecated Use logosForLightBackground or logosForDarkBackground. */
+export const logosForDarkBackground: readonly string[] =
+  logosForLightBackground.map((name) => name.replace(/^black-/i, "white-"));
+
+/** @deprecated Use logosForLightBackground */
+export const clientLogos = logosForLightBackground;
 export const logos = logosForLightBackground;
 
 export const logoWallText =

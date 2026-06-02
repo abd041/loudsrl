@@ -29,7 +29,7 @@ export const services = [
   {
     title: "DELIVERY & PLANNING",
     items: [
-      "Visual Design Approvation",
+      "Visual Design Approval",
       "Roadmap",
       "Deliverables",
       "Milestones",

@@ -1,15 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import HeroAnimatedText from "@/components/HeroAnimatedText";
 import HeroFadeText from "@/components/HeroFadeText";
 import { clampPresetIndex } from "@/data/liquidPresets";
 import { cn } from "@/lib/cn";
-
-const LoudOriginalHero = dynamic(
-  () => import("@/components/LoudOriginalHero"),
-  { ssr: false }
-);
 
 export type RouteHeroProps = {
   activeIndex: number;
@@ -48,7 +42,11 @@ export default function RouteHero({
         key={title}
         title={title}
         isWhiteHero={whiteHero}
-        className={whiteHero ? "text-black" : "text-white"}
+        className={cn(
+          whiteHero ? "text-black" : "text-white",
+          isPillarLayout &&
+            "mx-0 max-w-none text-left md:text-left lg:max-w-[min(100%,1100px)]"
+        )}
       />
       {body ? (
         <HeroFadeText
@@ -56,7 +54,8 @@ export default function RouteHero({
           text={body}
           className={cn(
             "mt-6 max-w-xl text-base leading-relaxed md:text-lg",
-            whiteHero ? "text-black/70" : "text-white/80"
+            whiteHero ? "text-black/70" : "text-white/80",
+            isPillarLayout && "text-left"
           )}
         />
       ) : null}
@@ -72,7 +71,7 @@ export default function RouteHero({
 
   return (
     <section className="relative min-h-[100svh] overflow-hidden">
-      <LoudOriginalHero activeIndex={safeIndex} preventZoomAnimation />
+      {/* Liquid: single fixed canvas via FooterLiquidBackdrop (live parity) */}
 
       {isPillarLayout && !whiteHero ? (
         <div
@@ -101,7 +100,7 @@ export default function RouteHero({
       ) : (
         <div
           className={cn(
-            "pointer-events-none relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-6 pt-32 text-center transition-colors duration-700",
+            "pointer-events-none relative z-10 flex min-h-[100svh] w-full max-w-[100vw] flex-col items-center justify-center overflow-hidden px-4 pt-28 text-center transition-colors duration-700 sm:px-6 sm:pt-32",
             whiteHero ? "text-black" : "text-white"
           )}
         >

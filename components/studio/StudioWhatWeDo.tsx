@@ -8,11 +8,13 @@ type StudioWhatWeDoProps = {
 
 export default function StudioWhatWeDo({ process }: StudioWhatWeDoProps) {
   return (
-    <section className="relative z-20 bg-white px-4 pb-60 pt-40 text-black lg:px-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-stretch gap-20 md:flex-row">
+    <section className="relative z-20 bg-white px-4 pb-24 pt-20 text-black md:pb-60 md:pt-40 lg:px-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-stretch gap-12 md:gap-20 md:flex-row">
         <div className="grow">
-          <p className="font-mono text-lg lg:text-xl">{studioWhatWeDo.label}</p>
-          <p className="mt-5 max-w-xl text-xl tracking-[0.03rem] leading-[120%] sm:leading-[140%] lg:text-2xl">
+          <p className="font-mono text-base tracking-[0.03rem] sm:text-lg lg:text-xl">
+            {studioWhatWeDo.label}
+          </p>
+          <p className="mt-4 max-w-xl text-lg tracking-[0.03rem] leading-[120%] sm:mt-5 sm:text-xl sm:leading-[140%] lg:text-2xl">
             {studioWhatWeDo.description}
           </p>
         </div>
@@ -34,11 +36,11 @@ export default function StudioWhatWeDo({ process }: StudioWhatWeDoProps) {
             />
           </div>
 
-          <ol className="flex h-full min-h-[320px] flex-col justify-end bg-[#4E71FF] px-6 py-9 sm:min-w-xs">
+          <ol className="flex h-full min-h-[280px] flex-col justify-end bg-[#4E71FF] px-6 py-9 sm:min-h-[320px] sm:min-w-xs">
             {process.map((step) => (
               <li
                 key={step}
-                className="ml-7 list-decimal text-xl tracking-[0.03rem] leading-[190%] text-white"
+                className="ml-6 list-decimal text-lg tracking-[0.03rem] leading-[175%] text-white sm:ml-7 sm:text-xl sm:leading-[190%]"
               >
                 {step}
               </li>

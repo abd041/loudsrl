@@ -1,20 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import {
   logoWallText,
   logosForDarkBackground,
   logosForLightBackground,
 } from "@/data/logos";
+import { gsap, registerGsap } from "@/lib/animations";
 import { logoSrc } from "@/lib/media";
 import { cn } from "@/lib/cn";
-import ScrollReveal from "./ScrollReveal";
 
 type LogoWallProps = {
   variant?: "dark" | "light";
+  /** Studio/contact: `mt-20` separator + live typography (no extra CTA) */
+  sectionLayout?: "default" | "studio" | "contact";
+  showCta?: boolean;
   ctaLabel?: string;
 };
+
+/** Measured on loudsrl.com/studio logo marquee (~160–165px/s). */
+const LOGO_MARQUEE_PX_PER_SEC = 162;
 
 function LogoWallLink({
   isLight,
@@ -57,38 +63,71 @@ function LogoWallLink({
   );
 }
 
-function LogoScroll({
-  logos,
-}: {
-  logos: string[];
-}) {
+function LogoMarquee({ logos }: { logos: string[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const tweenRef = useRef<gsap.core.Tween | null>(null);
   const items = [...logos, ...logos];
 
-  useEffect(() => {
-    const prefersReduced = window.matchMedia(
+  useLayoutEffect(() => {
+    registerGsap();
+    const track = trackRef.current;
+    if (!track) return;
+
+    const reduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-    if (prefersReduced && trackRef.current) {
-      trackRef.current.style.animation = "none";
-    }
-  }, []);
+
+    tweenRef.current?.kill();
+    gsap.set(track, { x: 0 });
+
+    if (reduced) return;
+
+    const halfWidth = track.scrollWidth / 2;
+    if (halfWidth <= 0) return;
+
+    tweenRef.current = gsap.to(track, {
+      x: -halfWidth,
+      duration: halfWidth / LOGO_MARQUEE_PX_PER_SEC,
+      ease: "none",
+      repeat: -1,
+    });
+
+    return () => {
+      tweenRef.current?.kill();
+    };
+  }, [logos]);
+
+  const pause = () => tweenRef.current?.pause();
+  const resume = () => tweenRef.current?.resume();
 
   return (
-    <div className="logo-marquee-scroll w-full cursor-grab overflow-hidden">
+    <div
+      className="w-full cursor-grab overflow-hidden"
+      onMouseEnter={pause}
+      onMouseLeave={resume}
+      onTouchStart={pause}
+      onTouchEnd={resume}
+    >
       <div
         ref={trackRef}
-        className="logo-marquee-track flex w-max items-center gap-10 md:gap-20"
+        className="flex w-max gap-10 will-change-transform md:gap-20"
       >
         {items.map((logo, index) => (
-          <div key={`${logo}-${index}`} className="flex h-10 shrink-0 items-center">
+          <div
+            key={`${logo}-${index}`}
+            className={cn(
+              "h-10 shrink-0",
+              index >= logos.length && "clone"
+            )}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={logoSrc(logo)}
-              alt=""
-              width={140}
-              height={40}
-              className="h-full w-auto max-w-[160px] object-contain"
+              alt={logo}
+              width={660}
+              height={220}
+              className="h-full w-auto"
+              draggable={false}
             />
           </div>
         ))}
@@ -99,36 +138,64 @@ function LogoScroll({
 
 export default function LogoWall({
   variant = "light",
+  sectionLayout = "default",
+  showCta = false,
   ctaLabel = "Be the next",
 }: LogoWallProps) {
   const isLight = variant === "light";
+  const isStudio = sectionLayout === "studio" || sectionLayout === "contact";
   const logos = isLight ? logosForLightBackground : logosForDarkBackground;
 
+  const headingClass = isStudio
+    ? "mx-auto w-full max-w-6xl px-4 text-center text-balance text-5xl leading-[115%]"
+    : cn(
+        "mx-auto w-full max-w-6xl px-4 text-center text-balance text-5xl leading-[115%]",
+        isLight ? "text-black" : "text-white"
+      );
+
+  const inner = (
+    <>
+      <div
+        className={cn(
+          "flex flex-col",
+          "gap-16"
+        )}
+      >
+        <p className={headingClass}>{logoWallText}</p>
+        <LogoMarquee logos={[...logos]} />
+      </div>
+
+      {showCta ? (
+        <div className="mt-16 flex justify-center px-4">
+          <LogoWallLink isLight={isLight} label={ctaLabel} />
+        </div>
+      ) : null}
+    </>
+  );
+
+  if (isStudio) {
+    return (
+      <div
+        className={cn(
+          "relative z-20 bg-white text-black",
+          "mt-20 border-[#dfdfdf]"
+        )}
+      >
+        <div className="py-28">
+          {inner}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <ScrollReveal
+    <div
       className={cn(
-        "overflow-hidden py-28",
+        "relative z-20 overflow-hidden py-28",
         isLight ? "bg-white text-black" : "bg-black text-white"
       )}
     >
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-16 px-4">
-        <p
-          className={cn(
-            "mx-auto w-full text-balance text-center text-3xl leading-[1.15] md:text-4xl lg:text-5xl",
-            isLight ? "text-black" : "text-white"
-          )}
-        >
-          {logoWallText}
-        </p>
-      </div>
-
-      <div className="mt-16 w-full">
-        <LogoScroll logos={logos} />
-      </div>
-
-      <div className="mx-auto mt-16 flex max-w-6xl justify-center px-4">
-        <LogoWallLink isLight={isLight} label={ctaLabel} />
-      </div>
-    </ScrollReveal>
+      <div className="mx-auto max-w-6xl px-4">{inner}</div>
+    </div>
   );
 }

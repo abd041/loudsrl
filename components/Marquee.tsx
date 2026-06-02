@@ -31,7 +31,7 @@ export default function Marquee({
   const renderContent = () => {
     if (!splitLetters) {
       return (
-        <span className="whitespace-nowrap px-8 text-[clamp(2rem,5vw,4.5rem)] font-light uppercase tracking-tight">
+        <span className="whitespace-nowrap px-6 text-[clamp(1.35rem,5.5vw,4.25rem)] font-light uppercase tracking-[-0.02em] sm:px-8">
           {content}
         </span>
       );
@@ -49,7 +49,7 @@ export default function Marquee({
   };
 
   return (
-    <div className={cn("overflow-hidden border-y border-white/10 py-6", className)}>
+    <div className={cn("overflow-hidden border-y border-white/10 py-7 md:py-8", className)}>
       <div
         ref={trackRef}
         className={cn("marquee-track", reverse && "marquee-track-reverse")}

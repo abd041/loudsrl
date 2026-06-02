@@ -29,35 +29,31 @@ export default function StudioPageClient() {
   return (
     <>
       <Header transparent isWhiteBg={isWhiteHeroIndex(liquidIndex)} />
-      <main className="-mt-[72px] cursor-invert bg-white text-black md:-mt-[88px]">
+      <main id="main-content" className="-mt-[72px] cursor-invert bg-white text-black md:-mt-[88px]">
         <StudioHero />
         <StudioWhatWeDo process={studioProcess} />
         <StudioMarquee text={studioMarqueeText} />
         <StudioBuildGrid cards={studioBuildCards} />
         <StudioWhyChoosingUs items={studioWhyChoosingUs} />
 
-        <section className="relative z-20 bg-white px-4 py-10 text-black lg:px-10 lg:py-20">
-          <div className="mx-auto max-w-6xl overflow-hidden">
-            <p className="font-mono text-xs tracking-[0.03rem] text-black/60">
-              {studioLiveSection.label}
-            </p>
-            <h2 className="text-4xl tracking-[0.03rem] leading-[120%] sm:leading-[140%]">
-              {studioLiveSection.title}
-            </h2>
+        <div className="relative z-20 bg-white pb-10 text-black">
+          <p className="mx-auto max-w-6xl px-4 text-xs !font-mono tracking-[0.03rem] opacity-60">
+            {studioLiveSection.label}
+          </p>
+          <h2 className="mx-auto max-w-6xl px-4 text-4xl tracking-[0.03rem] leading-[120%] sm:leading-[140%]">
+            {studioLiveSection.title}
+          </h2>
+          <ProjectCardsRow
+            projects={projectCardsFromSlugs(studioLiveProducts)}
+            embedded
+            labelMode="studio"
+            parityVariant="studio-live"
+          />
+        </div>
 
-            <div className="mt-10">
-              <ProjectCardsRow
-                projects={projectCardsFromSlugs(studioLiveProducts)}
-                embedded
-                labelMode="studio"
-              />
-            </div>
-          </div>
-        </section>
+        <LogoWall variant="light" sectionLayout="studio" />
 
-        <LogoWall variant="light" />
-
-        <div className="relative z-20 flex justify-center bg-white px-4 pb-24 pt-8 lg:px-10">
+        <div className="relative z-20 mt-11 flex w-full justify-center bg-white px-4 pb-16 sm:pb-24">
           <StudioFounderCta />
         </div>
       </main>

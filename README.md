@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LOUD SRL — Digital Product Company (Next.js clone)
 
-## Getting Started
+Production-grade marketing site clone of [loudsrl.com](https://loudsrl.com), built with **Next.js 14**, **Tailwind CSS**, **GSAP**, **Three.js**, and **Playwright** regression tests.
 
-First, run the development server:
+## Requirements
+
+- Node.js **20+**
+- npm **10+**
+
+## Quick start
 
 ```bash
+npm ci
+cp .env.example .env.local   # optional for contact webhook
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve production build |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | TypeScript (`tsc --noEmit`) |
+| `npm run ci` | Lint + typecheck + build |
+| `npm run test:smoke` | Release smoke tests (Playwright) |
+| `npm run test:parity` | Build + visual parity vs baselines |
+| `npm run test:parity:capture` | Capture baselines from live site |
+| `npm run lighthouse` | Lighthouse scores (local, non-gating) |
+| `npm run lighthouse:ci` | Lighthouse with CI thresholds |
+| `npm run analyze` | Bundle analyzer (`ANALYZE=true`) |
+| `npm run media:sync` | Sync media/logos from loudsrl.com CDN |
 
-## Learn More
+## Environment variables
 
-To learn more about Next.js, take a look at the following resources:
+See [`.env.example`](.env.example). Required for production contact delivery:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `CONTACT_WEBHOOK_URL`
+- `CONTACT_REQUIRE_WEBHOOK=true`
+- `NEXT_PUBLIC_SITE_URL` (canonical URL for sitemap/OG)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Optional observability:
 
-## Deploy on Vercel
+- `NEXT_PUBLIC_VERCEL_ANALYTICS` / `NEXT_PUBLIC_VERCEL_SPEED_INSIGHTS`
+- `NEXT_PUBLIC_ERROR_REPORT_URL`
+- `NEXT_PUBLIC_REPORT_WEB_VITALS=true`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run test:smoke
+npm run test:parity          # CI uses 6 routes × 2 viewports
+PARITY_FULL=1 npm run test:parity   # extended routes (Unix)
+```
+
+Parity baselines live in `tests/parity-baselines/`. Update with:
+
+```bash
+npm run test:parity:capture
+```
+
+## CI/CD
+
+GitHub Actions workflows in [`.github/workflows/`](.github/workflows/):
+
+- **`ci.yml`** — PR + push: lint, typecheck, build, smoke, parity, Lighthouse
+- **`deploy.yml`** — main: smoke + Vercel production deploy
+- **`parity-weekly.yml`** — scheduled full parity matrix
+
+See [docs/DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md) and [docs/ENGINEERING_REPORT.md](docs/ENGINEERING_REPORT.md).
+
+## Documentation
+
+| Doc | Purpose |
+|-----|---------|
+| [CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md) | Content & asset editing |
+| [DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md) | Vercel + env + webhooks |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Branch flow & PR process |
+| [FINAL_RELEASE_REPORT.md](docs/FINAL_RELEASE_REPORT.md) | Release QA sign-off |
+| [ENGINEERING_REPORT.md](docs/ENGINEERING_REPORT.md) | CI/CD & maintenance |
+
+## Troubleshooting
+
+| Issue | Fix |
+|-------|-----|
+| GSAP `vendor-chunks` error | `npm run clean && npm run dev` |
+| Playwright browsers missing | `npx playwright install --with-deps chromium` |
+| Parity fails on new route | Capture baseline or add route to `PARITY_CI_ROUTES` |
+| Contact 503 in production | Set `CONTACT_WEBHOOK_URL` |
+| Lighthouse perf fails on home | Home uses WebGL; CI allows lower threshold (`LH_PERF_MIN_HOME`) |
+
+## License
+
+Private — LOUD SRL clone for agency use.

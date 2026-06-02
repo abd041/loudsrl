@@ -19,6 +19,8 @@
 
 html {
   scroll-behavior: auto;
+  overflow-x: hidden;
+  background: var(--background);
 }
 
 body {
@@ -26,6 +28,16 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+@supports (min-height: 100dvh) {
+  .min-h-screen-safe {
+    min-height: 100dvh;
+  }
 }
 
 body.custom-cursor,
@@ -43,13 +55,35 @@ body.custom-cursor .cursor-close {
   color: #fff;
 }
 
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #4050a7;
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 @layer components {
   .page-padding {
-    @apply px-[18px] md:px-[40px] xl:px-[64px];
+    @apply px-[18px] max-[390px]:px-4 md:px-[40px] xl:px-[64px];
   }
 
   .section-label {
-    @apply text-xs uppercase tracking-[0.22em] text-white/50;
+    @apply text-xs uppercase text-white/50;
+    letter-spacing: 0.03rem;
   }
 
   .thin-border {
@@ -79,27 +113,67 @@ body.custom-cursor .cursor-close {
 
 .hero-display {
   font-family: var(--font-space-mono), "Courier New", monospace;
-  font-size: clamp(1.75rem, 3.2vw, 3rem);
+  font-size: clamp(1.375rem, 5.25vw, 3.125rem);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.028em;
+  font-weight: 300;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+@media (min-width: 768px) {
+  .hero-display {
+    font-size: clamp(1.875rem, 4vw, 3.125rem);
+    line-height: 1.12;
+    letter-spacing: -0.032em;
+  }
+}
+
+/* Home hero: wrap on mobile, single line from tablet up (matches loudsrl.com) */
+.hero-display--home {
+  max-width: min(100%, 22rem);
+}
+
+@media (min-width: 480px) {
+  .hero-display--home {
+    max-width: min(100%, 28rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-display--home {
+    max-width: none;
+    line-height: 1.12;
+  }
+}
+
+@media (max-width: 390px) {
+  .section-title {
+    font-size: clamp(2rem, 11vw, 3.5rem);
+    line-height: 0.95;
+  }
+
+  .huge-title {
+    font-size: clamp(2.5rem, 14vw, 4rem);
+  }
 }
 
 .pillar-marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 22s linear infinite;
+  animation: marquee 26s linear infinite;
 }
 
 .studio-marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 28s linear infinite;
+  animation: marquee 32s linear infinite;
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 36s linear infinite;
 }
 
 .marquee-track-reverse {
@@ -109,7 +183,7 @@ body.custom-cursor .cursor-close {
 .logo-marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 50s linear infinite;
+  animation: marquee 55s linear infinite;
 }
 
 .logo-marquee-scroll:hover .logo-marquee-track {
@@ -250,5 +324,60 @@ body.custom-cursor .cursor-close {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 16px;
+  }
+}
+
+.footer-dm {
+  font-family: var(--font-dm-mono), "Courier New", monospace !important;
+}
+
+ol.list-number {
+  list-style: none;
+  counter-reset: contact-step;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+ol.list-number > li {
+  counter-increment: contact-step;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgb(0 0 0 / 0.7);
+}
+
+ol.list-number > li::before {
+  content: counter(contact-step) ". ";
+  font-weight: 600;
+  color: #000;
+}
+
+ol.list-number > li strong {
+  font-weight: 600;
+  color: #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .marquee-track,
+  .marquee-track-reverse,
+  .logo-marquee-track,
+  .pillar-marquee-track,
+  .studio-marquee-track,
+  .glitch-text,
+  .blobs {
+    animation: none !important;
   }
 }

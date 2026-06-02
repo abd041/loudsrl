@@ -26,7 +26,7 @@ export default function ManifestoPageClient() {
   return (
     <>
       <Header transparent isWhiteBg={isWhiteHeroIndex(liquidIndex)} />
-      <main className="-mt-[72px] md:-mt-[88px]">
+      <main id="main-content" className="-mt-[72px] md:-mt-[88px]">
         <RouteHero
           activeIndex={liquidIndex}
           title="We are in a constant state of becoming."

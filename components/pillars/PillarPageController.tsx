@@ -56,7 +56,8 @@ export default function PillarPageController({
         isInsidePillar
         isWhiteBg={isWhiteHeroIndex(liquidIndex)}
       />
-      <main className="-mt-[72px] md:-mt-[88px]">
+      {/* Live: hero sits above main so fixed liquid shows through (main is bg-black). */}
+      <div className="-mt-[72px] md:-mt-[88px]">
         <RouteHero
           key={pillar.slug}
           activeIndex={liquidIndex}
@@ -71,7 +72,12 @@ export default function PillarPageController({
             />
           }
         />
+      </div>
 
+      <main
+        id="main-content"
+        className="relative z-10 bg-black cursor-force-white"
+      >
         <PillarConsultingIntro
           label={pillar.consultingLabel}
           text={pillar.consultingText}

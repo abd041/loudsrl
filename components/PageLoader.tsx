@@ -81,6 +81,7 @@ export default function PageLoader({
     >
       <div
         className={cn(
+          "relative z-10",
           showLoading && "pointer-events-none opacity-0",
           !showLoading && "opacity-100"
         )}

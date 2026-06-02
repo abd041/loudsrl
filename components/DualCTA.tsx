@@ -30,16 +30,32 @@ function PointFingerIcon({ className }: { className?: string }) {
   );
 }
 
-function CardHint({ centered }: { centered?: boolean }) {
+function CardFooter({
+  hint,
+  centered,
+}: {
+  hint: string;
+  centered?: boolean;
+}) {
   return (
     <div
       className={cn(
-        "flex items-center gap-2 text-[0.625rem] uppercase tracking-[0.18em] text-black/35 transition-colors duration-500 group-hover:text-white/45",
-        centered && "justify-center"
+        "flex flex-col gap-3 transition-colors duration-500",
+        centered && "items-center text-center"
       )}
     >
-      <PointFingerIcon />
-      <span>Point your finger to discover how to do that</span>
+      <div
+        className={cn(
+          "flex items-center gap-2 text-[0.625rem] uppercase tracking-[0.18em] text-black/35 transition-colors duration-500 group-hover:text-white/45",
+          centered && "justify-center"
+        )}
+      >
+        <PointFingerIcon />
+        <span>{hint}</span>
+      </div>
+      <span className="text-sm font-light tracking-[0.03em] text-black/50 transition-colors duration-500 group-hover:text-white/80">
+        {dualCtaCopy.submitLabel}
+      </span>
     </div>
   );
 }
@@ -50,6 +66,7 @@ type DualCardProps = {
   hoverText?: string;
   href: string;
   hoverImage: string;
+  hint: string;
   isLight: boolean;
 };
 
@@ -59,13 +76,14 @@ function DualCard({
   hoverText,
   href,
   hoverImage,
+  hint,
   isLight,
 }: DualCardProps) {
   return (
     <Link
       href={href}
       className={cn(
-        "group relative isolate min-h-[380px] cursor-link cursor-none overflow-hidden transition-colors duration-500 md:min-h-[460px] lg:min-h-[520px]",
+        "group relative isolate min-h-[300px] cursor-link cursor-none overflow-hidden transition-colors duration-500 sm:min-h-[380px] md:min-h-[460px] lg:min-h-[520px]",
         isLight
           ? "cursor-invert bg-[#e5e5e5] text-black hover:cursor-force-white hover:text-white"
           : "dark-card thin-border text-white"
@@ -129,7 +147,7 @@ function DualCard({
           ) : null}
         </div>
 
-        <CardHint centered={isLight} />
+        <CardFooter hint={hint} centered={isLight} />
       </div>
     </Link>
   );
@@ -148,7 +166,7 @@ export default function DualCTA({
     <section
       className={cn(
         "page-padding py-20 md:py-24 lg:py-28",
-        isLight ? "bg-white text-black" : ""
+        isLight ? "relative z-20 isolate bg-white text-black" : "relative z-10"
       )}
     >
       <div className="mx-auto max-w-6xl">
@@ -158,6 +176,7 @@ export default function DualCTA({
             title={agencyCta}
             href="/contact-us"
             hoverImage={dualCtaImages.agency}
+            hint={dualCtaCopy.agencyHint}
             isLight={isLight}
           />
           <DualCard
@@ -166,6 +185,7 @@ export default function DualCTA({
             hoverText={studioHoverText}
             href="/contact-us?c=startup"
             hoverImage={dualCtaImages.studio}
+            hint={dualCtaCopy.studioHint}
             isLight={isLight}
           />
         </div>

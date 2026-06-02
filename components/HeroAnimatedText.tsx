@@ -15,12 +15,35 @@ type HeroAnimatedTextProps = {
 };
 
 function splitTitle(el: HTMLElement, title: string) {
-  const words = title.split(/\s+/).filter(Boolean);
-  el.innerHTML = words
-    .map(
-      (word) =>
-        `<span class="hero-word inline-block overflow-hidden"><span class="hero-word-inner inline-block !font-mono !font-light">${word}&nbsp;</span></span>`
-    )
+  const lines = title
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const wordsByLine = lines.map((line) => line.split(/\s+/).filter(Boolean));
+  const flatWords = wordsByLine.flat();
+  const escapeHtml = (s: string) =>
+    s
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+  let globalIndex = 0;
+  el.innerHTML = wordsByLine
+    .map((lineWords, lineIndex) => {
+      const html = lineWords
+        .map((word) => {
+          const isLast = globalIndex === flatWords.length - 1;
+          const wordHtml = `<span class="hero-word inline-block overflow-hidden"><span class="hero-word-inner inline-block !font-mono !font-light ${!isLast ? "mr-[0.35em]" : ""}">${escapeHtml(word)}</span></span>`;
+          globalIndex += 1;
+          return wordHtml;
+        })
+        .join("");
+
+      const needsBreak = lineIndex < wordsByLine.length - 1;
+      return needsBreak ? `${html}<br />` : html;
+    })
     .join("");
   return el.querySelectorAll<HTMLElement>(".hero-word-inner");
 }
@@ -85,10 +108,10 @@ export default function HeroAnimatedText({
     <h1
       ref={containerRef}
       className={cn(
-        "hero-display px-2 text-center text-3xl font-light leading-[115%] md:text-[3.25rem] md:leading-[120%]",
+        "hero-display w-full min-w-0 max-w-full px-1 text-center font-light sm:px-2",
         singleLine
-          ? "max-w-none whitespace-nowrap"
-          : "max-w-[800px] text-balance",
+          ? "hero-display--home mx-auto text-balance md:max-w-none md:whitespace-nowrap"
+          : "mx-auto max-w-[800px] text-balance",
         isWhiteHero ? "text-black" : "text-white",
         className
       )}
