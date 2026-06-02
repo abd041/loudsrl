@@ -88,6 +88,11 @@ export default function Header({
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Safety: ensure route transitions never leave the body scroll-locked on mobile.
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
   useBodyScrollLock(menuOpen);
 
   useEffect(() => {
